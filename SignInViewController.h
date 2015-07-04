@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "SettingsViewController.h"
 
 @interface SignInViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *userField;

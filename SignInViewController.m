@@ -28,20 +28,23 @@
     [PFUser logInWithUsernameInBackground:@"demo" password:@"demo"
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
-                                        //Login Passed
+                                           // [self performSegueWithIdentifier:@"LogInSuccessful" sender:self];
+                                            [self dismissViewControllerAnimated:YES completion:nil];
+                                            
                                         } else {
                                             // The login failed. Check error to see why.
                                         }
                                     }];}
 
-/*
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
 
 @end
