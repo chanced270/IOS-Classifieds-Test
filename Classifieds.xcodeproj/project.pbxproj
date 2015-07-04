@@ -81,11 +81,7 @@
 		1411DF6A1B47862A00819398 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1411DF6C1B47865000819398 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1411DF811B47888500819398 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/Bolts.framework"; sourceTree = "<group>"; };
-		1411DF821B47888500819398 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/Parse.framework"; sourceTree = "<group>"; };
-		1411DF831B47888500819398 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		1411DF841B47888500819398 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		1411DF851B47888500819398 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
-		1411DF861B47888500819398 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/ParseUI.framework"; sourceTree = "<group>"; };
+		1411DF931B478C2300819398 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/Parse.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,12 +206,8 @@
 		1411DF7A1B47874A00819398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1411DF931B478C2300819398 /* Parse.framework */,
 				1411DF811B47888500819398 /* Bolts.framework */,
-				1411DF821B47888500819398 /* Parse.framework */,
-				1411DF831B47888500819398 /* ParseCrashReporting.framework */,
-				1411DF841B47888500819398 /* ParseFacebookUtils.framework */,
-				1411DF851B47888500819398 /* ParseFacebookUtilsV4.framework */,
-				1411DF861B47888500819398 /* ParseUI.framework */,
 				1411DF6C1B47865000819398 /* libsqlite3.tbd */,
 				1411DF6A1B47862A00819398 /* libz.tbd */,
 				1411DF681B47861A00819398 /* SystemConfiguration.framework */,
