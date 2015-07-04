@@ -12,7 +12,6 @@
 		1411DF211B477C0E00819398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1411DF1F1B477C0E00819398 /* Main.storyboard */; };
 		1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1411DF221B477C0E00819398 /* Classifieds.xcdatamodeld */; };
 		1411DF261B477C0E00819398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1411DF251B477C0E00819398 /* Assets.xcassets */; };
-		1411DF291B477C0E00819398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1411DF271B477C0E00819398 /* LaunchScreen.storyboard */; };
 		1411DF341B477C0E00819398 /* ClassifiedsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1411DF331B477C0E00819398 /* ClassifiedsTests.m */; };
 		1411DF3F1B477C0E00819398 /* ClassifiedsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1411DF3E1B477C0E00819398 /* ClassifiedsUITests.m */; };
 		1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1411DF4D1B47808300819398 /* ItemListTableViewController.m */; };
@@ -27,8 +26,16 @@
 		1411DF651B47860400819398 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF641B47860400819398 /* Social.framework */; };
 		1411DF671B47860A00819398 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF661B47860A00819398 /* StoreKit.framework */; };
 		1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF681B47861A00819398 /* SystemConfiguration.framework */; };
-		1411DF6B1B47862A00819398 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF6A1B47862A00819398 /* libz.tbd */; };
-		1411DF6D1B47865000819398 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF6C1B47865000819398 /* libsqlite3.tbd */; };
+		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
+		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
+		14B0A09E1B47923C00EDEC5C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09D1B47923C00EDEC5C /* libz.dylib */; };
+		14B0A0A51B47925B00EDEC5C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09F1B47925B00EDEC5C /* Parse.framework */; };
+		14B0A0A61B47925B00EDEC5C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A01B47925B00EDEC5C /* Bolts.framework */; };
+		14B0A0A71B47925B00EDEC5C /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A11B47925B00EDEC5C /* ParseCrashReporting.framework */; };
+		14B0A0A81B47925B00EDEC5C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A21B47925B00EDEC5C /* ParseUI.framework */; };
+		14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */; };
+		14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */; };
+		14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +63,6 @@
 		1411DF201B477C0E00819398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1411DF231B477C0E00819398 /* Classifieds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Classifieds.xcdatamodel; sourceTree = "<group>"; };
 		1411DF251B477C0E00819398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1411DF281B477C0E00819398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1411DF2A1B477C0E00819398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1411DF2F1B477C0E00819398 /* ClassifiedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassifiedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411DF331B477C0E00819398 /* ClassifiedsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifiedsTests.m; sourceTree = "<group>"; };
@@ -78,10 +84,17 @@
 		1411DF641B47860400819398 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1411DF661B47860A00819398 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1411DF681B47861A00819398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		1411DF6A1B47862A00819398 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		1411DF6C1B47865000819398 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		1411DF811B47888500819398 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/Bolts.framework"; sourceTree = "<group>"; };
-		1411DF931B478C2300819398 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1.7.5 (1)/Parse.framework"; sourceTree = "<group>"; };
+		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
+		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
+		14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		14B0A09D1B47923C00EDEC5C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		14B0A09F1B47925B00EDEC5C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		14B0A0A01B47925B00EDEC5C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		14B0A0A11B47925B00EDEC5C /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		14B0A0A21B47925B00EDEC5C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,18 +102,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1411DF6D1B47865000819398 /* libsqlite3.tbd in Frameworks */,
-				1411DF6B1B47862A00819398 /* libz.tbd in Frameworks */,
+				14B0A09E1B47923C00EDEC5C /* libz.dylib in Frameworks */,
+				14B0A0A71B47925B00EDEC5C /* ParseCrashReporting.framework in Frameworks */,
+				14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */,
+				14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */,
 				1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */,
 				1411DF671B47860A00819398 /* StoreKit.framework in Frameworks */,
 				1411DF651B47860400819398 /* Social.framework in Frameworks */,
+				14B0A0A81B47925B00EDEC5C /* ParseUI.framework in Frameworks */,
 				1411DF631B4785FE00819398 /* Security.framework in Frameworks */,
+				14B0A0A51B47925B00EDEC5C /* Parse.framework in Frameworks */,
 				1411DF611B4785F400819398 /* MobileCoreServices.framework in Frameworks */,
 				1411DF5F1B4785E000819398 /* CoreLocation.framework in Frameworks */,
 				1411DF5D1B4785D000819398 /* CoreGraphics.framework in Frameworks */,
 				1411DF5B1B4785CB00819398 /* CFNetwork.framework in Frameworks */,
 				1411DF591B4785C600819398 /* AudioToolbox.framework in Frameworks */,
+				14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */,
 				1411DF571B4785C000819398 /* Accounts.framework in Frameworks */,
+				14B0A0A61B47925B00EDEC5C /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +163,13 @@
 		1411DF151B477C0E00819398 /* Classifieds */ = {
 			isa = PBXGroup;
 			children = (
+				14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */,
 				1411DF191B477C0E00819398 /* AppDelegate.h */,
 				1411DF1A1B477C0E00819398 /* AppDelegate.m */,
 				1411DF1F1B477C0E00819398 /* Main.storyboard */,
 				1411DF511B4783E500819398 /* Main View */,
 				1411DF551B47840E00819398 /* SettingsAndUser */,
 				1411DF251B477C0E00819398 /* Assets.xcassets */,
-				1411DF271B477C0E00819398 /* LaunchScreen.storyboard */,
 				1411DF2A1B477C0E00819398 /* Info.plist */,
 				1411DF221B477C0E00819398 /* Classifieds.xcdatamodeld */,
 				1411DF7A1B47874A00819398 /* Frameworks */,
@@ -197,6 +216,8 @@
 		1411DF551B47840E00819398 /* SettingsAndUser */ = {
 			isa = PBXGroup;
 			children = (
+				142FC3831B479EFD007D0944 /* SignInViewController.h */,
+				142FC3841B479EFD007D0944 /* SignInViewController.m */,
 				1411DF521B47840700819398 /* SettingsViewController.h */,
 				1411DF531B47840700819398 /* SettingsViewController.m */,
 			);
@@ -206,10 +227,14 @@
 		1411DF7A1B47874A00819398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1411DF931B478C2300819398 /* Parse.framework */,
-				1411DF811B47888500819398 /* Bolts.framework */,
-				1411DF6C1B47865000819398 /* libsqlite3.tbd */,
-				1411DF6A1B47862A00819398 /* libz.tbd */,
+				14B0A09D1B47923C00EDEC5C /* libz.dylib */,
+				14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */,
+				14B0A09F1B47925B00EDEC5C /* Parse.framework */,
+				14B0A0A01B47925B00EDEC5C /* Bolts.framework */,
+				14B0A0A11B47925B00EDEC5C /* ParseCrashReporting.framework */,
+				14B0A0A21B47925B00EDEC5C /* ParseUI.framework */,
+				14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */,
+				14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */,
 				1411DF681B47861A00819398 /* SystemConfiguration.framework */,
 				1411DF661B47860A00819398 /* StoreKit.framework */,
 				1411DF641B47860400819398 /* Social.framework */,
@@ -329,9 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1411DF291B477C0E00819398 /* LaunchScreen.storyboard in Resources */,
 				1411DF261B477C0E00819398 /* Assets.xcassets in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
+				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +385,7 @@
 				1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
 				1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */,
+				142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */,
 				1411DF181B477C0E00819398 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,14 +430,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1411DF271B477C0E00819398 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1411DF281B477C0E00819398 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -435,6 +453,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -453,7 +472,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +498,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -503,8 +523,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
@@ -519,8 +543,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,8 +559,8 @@
 		1411DF471B477C0E00819398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClassifiedsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.ClassifiedsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,8 +571,8 @@
 		1411DF481B477C0E00819398 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClassifiedsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.ClassifiedsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = ClassifiedsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.ClassifiedsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -568,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = ClassifiedsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.ClassifiedsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,6 +625,7 @@
 				1411DF451B477C0E00819398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1411DF461B477C0E00819398 /* Build configuration list for PBXNativeTarget "ClassifiedsTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +634,7 @@
 				1411DF481B477C0E00819398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1411DF491B477C0E00819398 /* Build configuration list for PBXNativeTarget "ClassifiedsUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +643,7 @@
 				1411DF4B1B477C0E00819398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

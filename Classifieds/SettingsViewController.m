@@ -13,10 +13,24 @@
 @end
 
 @implementation SettingsViewController
+@synthesize StatusTxt, LogInBTN;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSString *user = [currentUser username];
+        NSString *statusInfo = [NSString stringWithFormat:@"Welcome, %@", user];
+        StatusTxt.text = statusInfo;
+        LogInBTN.enabled = false;
+        LogInBTN.hidden = true;
+
+    }
+    else{
+        //@selector(performSegueWithIdentifier:);
+        StatusTxt.text = @"Sorry you are not signed in.";
+    }
+    //self.navigationItem.backBarButtonItem.title = @"Back";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface SettingsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *StatusTxt;
+@property (weak, nonatomic) IBOutlet UIButton *LogInBTN;
 
 @end
