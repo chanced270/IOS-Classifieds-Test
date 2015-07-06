@@ -27,6 +27,7 @@
 		1411DF671B47860A00819398 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF661B47860A00819398 /* StoreKit.framework */; };
 		1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF681B47861A00819398 /* SystemConfiguration.framework */; };
 		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
+		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
 		14B0A09E1B47923C00EDEC5C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09D1B47923C00EDEC5C /* libz.dylib */; };
 		14B0A0A51B47925B00EDEC5C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09F1B47925B00EDEC5C /* Parse.framework */; };
@@ -86,6 +87,7 @@
 		1411DF681B47861A00819398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
 		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
+		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		14B0A09D1B47923C00EDEC5C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		14B0A09F1B47925B00EDEC5C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */,
 				14B0A09E1B47923C00EDEC5C /* libz.dylib in Frameworks */,
 				14B0A0A71B47925B00EDEC5C /* ParseCrashReporting.framework in Frameworks */,
 				14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */,
@@ -227,6 +230,7 @@
 		1411DF7A1B47874A00819398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */,
 				14B0A09D1B47923C00EDEC5C /* libz.dylib */,
 				14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */,
 				14B0A09F1B47925B00EDEC5C /* Parse.framework */,
@@ -526,6 +530,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Zack/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -546,6 +551,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/Zack/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
