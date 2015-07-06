@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -61,26 +62,23 @@
                         <viewControllerLayoutGuide type="bottom" id="QhC-1h-t1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Un-am-bOm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzW-7J-0Fq">
-                                <rect key="frame" x="20" y="72" width="216" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
+                                <rect key="frame" x="8" y="72" width="168" height="17"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="Dqh-ef-UgF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOv-Zl-MGA">
-                                <rect key="frame" x="467" y="75" width="113" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
+                                <rect key="frame" x="204" y="72" width="96" height="17"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="11s-vG-dYW"/>
+                                    <constraint firstAttribute="width" constant="96" id="bXk-3Z-yFu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,15 +101,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="11" id="3y1-aa-3oX"/>
-                            <constraint firstItem="BzW-7J-0Fq" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" id="41c-Nv-vgt"/>
-                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="KOv-Zl-MGA" secondAttribute="bottom" constant="504" id="5l2-M2-EfG"/>
-                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="centerY" secondItem="BzW-7J-0Fq" secondAttribute="centerY" id="P3l-Cl-Bbz"/>
-                            <constraint firstItem="BzW-7J-0Fq" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="Qt7-UB-V4P"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="2S5-uc-uPo"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="leading" secondItem="WtF-6H-ZCt" secondAttribute="trailing" constant="28" id="I3R-rb-AUg"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" constant="-8" id="IIb-dO-sG1"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="7" id="Rlj-p2-Lgf"/>
-                            <constraint firstItem="BzW-7J-0Fq" firstAttribute="centerY" secondItem="PXx-0H-09w" secondAttribute="centerY" id="cRH-fw-dxV"/>
+                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="WtF-6H-ZCt" secondAttribute="bottom" constant="479" id="YeV-C4-jM6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7la-G9-ldl" secondAttribute="trailing" constant="4" id="aTW-jJ-aY8"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="m1B-tV-I49"/>
-                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="pLf-uQ-aNI"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="baseline" secondItem="7la-G9-ldl" secondAttribute="baseline" id="u4e-HX-yQm"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="firstBaseline" secondItem="WtF-6H-ZCt" secondAttribute="firstBaseline" id="z0x-U1-aoe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -123,10 +121,11 @@
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="IA4-gr-ghZ"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="Location" destination="KOv-Zl-MGA" id="85f-y8-IyI"/>
+                        <outlet property="Location" destination="7la-G9-ldl" id="KZc-dh-hE6"/>
                         <outlet property="LogInBTN" destination="PXx-0H-09w" id="5VM-Rz-fLz"/>
-                        <outlet property="StatusTxt" destination="BzW-7J-0Fq" id="mSg-NH-zvs"/>
+                        <outlet property="StatusTxt" destination="WtF-6H-ZCt" id="MsK-7g-9kM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGq-VA-VEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
