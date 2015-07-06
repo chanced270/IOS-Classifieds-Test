@@ -74,6 +74,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOv-Zl-MGA">
+                                <rect key="frame" x="467" y="75" width="113" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="11s-vG-dYW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-0H-09w">
                                 <rect key="frame" x="537" y="71" width="43" height="30"/>
                                 <animations/>
@@ -93,18 +103,28 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="11" id="3y1-aa-3oX"/>
                             <constraint firstItem="BzW-7J-0Fq" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" id="41c-Nv-vgt"/>
+                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="KOv-Zl-MGA" secondAttribute="bottom" constant="504" id="5l2-M2-EfG"/>
+                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="centerY" secondItem="BzW-7J-0Fq" secondAttribute="centerY" id="P3l-Cl-Bbz"/>
                             <constraint firstItem="BzW-7J-0Fq" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="Qt7-UB-V4P"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="7" id="Rlj-p2-Lgf"/>
                             <constraint firstItem="BzW-7J-0Fq" firstAttribute="centerY" secondItem="PXx-0H-09w" secondAttribute="centerY" id="cRH-fw-dxV"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="m1B-tV-I49"/>
+                            <constraint firstItem="KOv-Zl-MGA" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="pLf-uQ-aNI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PXx-0H-09w"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="aQv-A0-WxJ">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="IA4-gr-ghZ"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="Location" destination="KOv-Zl-MGA" id="85f-y8-IyI"/>
                         <outlet property="LogInBTN" destination="PXx-0H-09w" id="5VM-Rz-fLz"/>
                         <outlet property="StatusTxt" destination="BzW-7J-0Fq" id="mSg-NH-zvs"/>
                     </connections>
@@ -125,7 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-kY-6aX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-kY-6aX">
                                 <rect key="frame" x="209" y="97" width="183" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -134,13 +154,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-Zk-4eS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-Zk-4eS">
                                 <rect key="frame" x="209" y="135" width="183" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-ba-awi">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-ba-awi">
                                 <rect key="frame" x="277" y="173" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Login"/>
