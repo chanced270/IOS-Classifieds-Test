@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import <CoreLocation/CoreLocation.h>
 
-@interface SettingsViewController : UIViewController <CLLocationManagerDelegate>
+@interface SettingsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *StatusTxt;
 @property (weak, nonatomic) IBOutlet UIButton *LogInBTN;
 @property (weak, nonatomic) IBOutlet UILabel *Location;
