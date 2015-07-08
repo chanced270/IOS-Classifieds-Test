@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -65,18 +66,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
                                 <rect key="frame" x="8" y="72" width="168" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
                                 <rect key="frame" x="204" y="72" width="96" height="17"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="bXk-3Z-yFu"/>
+                                    <constraint firstAttribute="width" constant="96" id="UmE-JJ-TgD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -101,15 +102,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="2S5-uc-uPo"/>
-                            <constraint firstItem="7la-G9-ldl" firstAttribute="leading" secondItem="WtF-6H-ZCt" secondAttribute="trailing" constant="28" id="I3R-rb-AUg"/>
-                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" constant="-8" id="IIb-dO-sG1"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" constant="-8" id="3en-mT-iUZ"/>
+                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="WtF-6H-ZCt" secondAttribute="bottom" constant="479" id="7To-Ku-kHf"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="baseline" secondItem="WtF-6H-ZCt" secondAttribute="baseline" id="9xw-1i-3VQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7la-G9-ldl" secondAttribute="trailing" constant="4" id="JMU-Fp-n9B"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="Qka-fP-Mex"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="7" id="Rlj-p2-Lgf"/>
-                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="WtF-6H-ZCt" secondAttribute="bottom" constant="479" id="YeV-C4-jM6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7la-G9-ldl" secondAttribute="trailing" constant="4" id="aTW-jJ-aY8"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="firstBaseline" secondItem="WtF-6H-ZCt" secondAttribute="firstBaseline" id="Ybq-go-nSJ"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="leading" secondItem="WtF-6H-ZCt" secondAttribute="trailing" constant="28" id="kcs-Wy-OQ1"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="m1B-tV-I49"/>
-                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="baseline" secondItem="7la-G9-ldl" secondAttribute="baseline" id="u4e-HX-yQm"/>
-                            <constraint firstItem="7la-G9-ldl" firstAttribute="firstBaseline" secondItem="WtF-6H-ZCt" secondAttribute="firstBaseline" id="z0x-U1-aoe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">

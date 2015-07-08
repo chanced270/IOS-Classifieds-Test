@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,6 +14,10 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stock_41__paper_texture_bigger_by_our_stock.png" translatesAutoresizingMaskIntoConstraints="NO" id="rfa-pK-EDK">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Zackary Divine. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                     <rect key="frame" x="20" y="559" width="561" height="21"/>
                     <animations/>
@@ -22,26 +28,80 @@
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     </variation>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classifieds" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="180" width="561" height="43"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-KE-wRN">
+                    <rect key="frame" x="8" y="206" width="584" height="89"/>
                     <animations/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Classifieds">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="72" name="Optima-ExtraBlack"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-xq-g8y">
+                    <rect key="frame" x="20" y="234" width="561" height="83"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="clu-Id-Zle"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="__________________________">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="43" name="Optima-ExtraBlack"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-vE-wPO">
+                    <rect key="frame" x="20" y="274" width="561" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="0Yf-nX-Uh1"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="For Sale or Trade">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="71" name="Optima-ExtraBlack"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="Kid-kn-2rF"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="baseline" secondItem="hzN-xq-g8y" secondAttribute="firstBaseline" id="2iS-lc-1bu"/>
+                <constraint firstAttribute="bottom" secondItem="rfa-pK-EDK" secondAttribute="bottom" id="6QN-cR-cDM"/>
+                <constraint firstItem="rfa-pK-EDK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AbH-VC-i8D"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="leading" secondItem="hzN-xq-g8y" secondAttribute="leading" id="FFg-j2-aI0"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="206" id="GUB-1m-9Yt"/>
+                <constraint firstItem="hzN-xq-g8y" firstAttribute="trailing" secondItem="Dbj-vE-wPO" secondAttribute="trailing" id="HH0-g2-3ji"/>
+                <constraint firstItem="hzN-xq-g8y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="IqP-WE-oo7"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="274" id="Jlc-9L-4Gh"/>
+                <constraint firstAttribute="trailing" secondItem="rfa-pK-EDK" secondAttribute="trailing" id="KLA-Li-m1y"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="leading" secondItem="8ie-xW-0ye" secondAttribute="leading" id="U8O-n4-C1I"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="daJ-SQ-Ur6"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="trailing" secondItem="Dbj-vE-wPO" secondAttribute="trailing" id="fky-vo-6Pn"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="giK-vZ-HRG"/>
+                <constraint firstItem="rfa-pK-EDK" firstAttribute="centerX" secondItem="hzN-xq-g8y" secondAttribute="centerX" id="kTj-l4-kX2"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="centerX" secondItem="hzN-xq-g8y" secondAttribute="centerX" id="ou3-jx-hW5"/>
+                <constraint firstItem="rfa-pK-EDK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ul2-Gl-6fd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="404" y="445"/>
         </view>
     </objects>
+    <resources>
+        <image name="stock_41__paper_texture_bigger_by_our_stock.png" width="1024" height="768"/>
+    </resources>
 </document>

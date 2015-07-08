@@ -37,6 +37,7 @@
 		14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */; };
 		14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */; };
 		14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */; };
+		14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stock_41__paper_texture_bigger_by_our_stock.png; path = ../../../../Downloads/stock_41__paper_texture_bigger_by_our_stock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		1411DF151B477C0E00819398 /* Classifieds */ = {
 			isa = PBXGroup;
 			children = (
+				14F685D81B4CD85600DBA57B /* Images */,
 				14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */,
 				1411DF191B477C0E00819398 /* AppDelegate.h */,
 				1411DF1A1B477C0E00819398 /* AppDelegate.m */,
@@ -252,6 +255,14 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		14F685D81B4CD85600DBA57B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1411DF261B477C0E00819398 /* Assets.xcassets in Resources */,
+				14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
 				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
 			);
