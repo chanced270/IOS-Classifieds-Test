@@ -3,23 +3,21 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stock_41__paper_texture_bigger_by_our_stock.png" translatesAutoresizingMaskIntoConstraints="NO" id="rfa-pK-EDK">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                     <animations/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Zackary Divine. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="559" width="561" height="21"/>
+                    <rect key="frame" x="20" y="983" width="729" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,7 +27,7 @@
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-KE-wRN">
-                    <rect key="frame" x="8" y="206" width="584" height="89"/>
+                    <rect key="frame" x="8" y="206" width="752" height="89"/>
                     <animations/>
                     <attributedString key="attributedText">
                         <fragment content="Classifieds">
@@ -42,28 +40,11 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-xq-g8y">
-                    <rect key="frame" x="20" y="234" width="561" height="83"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="83" id="clu-Id-Zle"/>
-                    </constraints>
-                    <attributedString key="attributedText">
-                        <fragment content="__________________________">
-                            <attributes>
-                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <font key="NSFont" size="43" name="Optima-ExtraBlack"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-vE-wPO">
-                    <rect key="frame" x="20" y="274" width="561" height="90"/>
+                    <rect key="frame" x="20" y="274" width="729" height="90"/>
                     <animations/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="90" id="0Yf-nX-Uh1"/>
+                        <constraint firstAttribute="height" constant="90" id="V0L-KQ-HZ7"/>
                     </constraints>
                     <attributedString key="attributedText">
                         <fragment content="For Sale or Trade">
@@ -76,32 +57,41 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-line-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Lg-K2-7gh">
+                    <rect key="frame" x="17" y="280" width="735" height="7"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="7" id="6lk-4V-rLn"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="HYH-KE-wRN" firstAttribute="baseline" secondItem="hzN-xq-g8y" secondAttribute="firstBaseline" id="2iS-lc-1bu"/>
-                <constraint firstAttribute="bottom" secondItem="rfa-pK-EDK" secondAttribute="bottom" id="6QN-cR-cDM"/>
-                <constraint firstItem="rfa-pK-EDK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AbH-VC-i8D"/>
-                <constraint firstItem="Dbj-vE-wPO" firstAttribute="leading" secondItem="hzN-xq-g8y" secondAttribute="leading" id="FFg-j2-aI0"/>
-                <constraint firstItem="HYH-KE-wRN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="206" id="GUB-1m-9Yt"/>
-                <constraint firstItem="hzN-xq-g8y" firstAttribute="trailing" secondItem="Dbj-vE-wPO" secondAttribute="trailing" id="HH0-g2-3ji"/>
-                <constraint firstItem="hzN-xq-g8y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="IqP-WE-oo7"/>
-                <constraint firstItem="Dbj-vE-wPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="274" id="Jlc-9L-4Gh"/>
-                <constraint firstAttribute="trailing" secondItem="rfa-pK-EDK" secondAttribute="trailing" id="KLA-Li-m1y"/>
-                <constraint firstItem="Dbj-vE-wPO" firstAttribute="leading" secondItem="8ie-xW-0ye" secondAttribute="leading" id="U8O-n4-C1I"/>
-                <constraint firstItem="HYH-KE-wRN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="daJ-SQ-Ur6"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="trailing" secondItem="Dbj-vE-wPO" secondAttribute="trailing" id="fky-vo-6Pn"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="giK-vZ-HRG"/>
-                <constraint firstItem="rfa-pK-EDK" firstAttribute="centerX" secondItem="hzN-xq-g8y" secondAttribute="centerX" id="kTj-l4-kX2"/>
-                <constraint firstItem="HYH-KE-wRN" firstAttribute="centerX" secondItem="hzN-xq-g8y" secondAttribute="centerX" id="ou3-jx-hW5"/>
-                <constraint firstItem="rfa-pK-EDK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ul2-Gl-6fd"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="274" id="4cn-Vp-5b2"/>
+                <constraint firstItem="3Lg-K2-7gh" firstAttribute="centerX" secondItem="Dbj-vE-wPO" secondAttribute="centerX" id="8gk-AC-mQf"/>
+                <constraint firstItem="3Lg-K2-7gh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="280" id="9G3-Zi-pEi"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="A6g-p7-dvs"/>
+                <constraint firstItem="3Lg-K2-7gh" firstAttribute="centerX" secondItem="HYH-KE-wRN" secondAttribute="centerX" id="Ez8-cm-jNa"/>
+                <constraint firstItem="3Lg-K2-7gh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="Kgr-GI-0b0"/>
+                <constraint firstItem="rfa-pK-EDK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NNl-JG-uQv"/>
+                <constraint firstAttribute="bottom" secondItem="rfa-pK-EDK" secondAttribute="bottom" id="RAR-9L-51K"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="dOe-Ss-qJO"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="centerX" secondItem="rfa-pK-EDK" secondAttribute="centerX" id="db2-h3-V7e"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="Dbj-vE-wPO" secondAttribute="leading" id="kBM-pZ-N2q"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" id="pc9-CU-ksy"/>
+                <constraint firstItem="Dbj-vE-wPO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="sjC-10-zTA"/>
+                <constraint firstAttribute="trailing" secondItem="rfa-pK-EDK" secondAttribute="trailing" id="uPA-o1-CwR"/>
+                <constraint firstItem="rfa-pK-EDK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xJ8-QF-K7r"/>
+                <constraint firstItem="HYH-KE-wRN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="206" id="ybC-vG-XNk"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
             <point key="canvasLocation" x="404" y="445"/>
         </view>
     </objects>
     <resources>
+        <image name="black-line-bg.png" width="768" height="20"/>
         <image name="stock_41__paper_texture_bigger_by_our_stock.png" width="1024" height="768"/>
     </resources>
 </document>

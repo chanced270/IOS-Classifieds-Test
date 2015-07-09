@@ -26,6 +26,8 @@
 		1411DF651B47860400819398 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF641B47860400819398 /* Social.framework */; };
 		1411DF671B47860A00819398 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF661B47860A00819398 /* StoreKit.framework */; };
 		1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF681B47861A00819398 /* SystemConfiguration.framework */; };
+		142DE5D71B4E035E00AFF8FB /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */; };
+		142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */; };
 		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
@@ -86,6 +88,8 @@
 		1411DF641B47860400819398 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1411DF661B47860A00819398 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1411DF681B47861A00819398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-line-bg.png"; path = "../../../../Documents/Classifieds Images/black-line-bg.png"; sourceTree = "<group>"; };
 		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
 		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				1411DF191B477C0E00819398 /* AppDelegate.h */,
 				1411DF1A1B477C0E00819398 /* AppDelegate.m */,
 				1411DF1F1B477C0E00819398 /* Main.storyboard */,
+				142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */,
 				1411DF511B4783E500819398 /* Main View */,
 				1411DF551B47840E00819398 /* SettingsAndUser */,
 				1411DF251B477C0E00819398 /* Assets.xcassets */,
@@ -260,6 +265,7 @@
 		14F685D81B4CD85600DBA57B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */,
 				14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */,
 			);
 			name = Images;
@@ -373,6 +379,8 @@
 				14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
 				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
+				142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */,
+				142DE5D71B4E035E00AFF8FB /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +559,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -571,6 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -29,12 +29,16 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                            // [self performSegueWithIdentifier:@"LogInSuccessful" sender:self];
+                                            NSLog(@"Logging in");
                                             [self dismissViewControllerAnimated:YES completion:nil];
                                             
                                         } else {
-                                            // The login failed. Check error to see why.
+                                           NSString *errorString = [error userInfo][@"error"];
+                                            UIAlertView *Error = [[UIAlertView alloc] initWithTitle:@"Error Sigining in" message:errorString delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                            [Error show];
                                         }
-                                    }];}
+                                    }];
+                                        }
 
 
 

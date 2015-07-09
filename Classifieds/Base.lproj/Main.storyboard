@@ -63,18 +63,18 @@
                         <viewControllerLayoutGuide type="bottom" id="QhC-1h-t1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Un-am-bOm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
-                                <rect key="frame" x="8" y="72" width="168" height="17"/>
+                                <rect key="frame" x="12" y="72" width="440" height="49"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
-                                <rect key="frame" x="204" y="72" width="96" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
+                                <rect key="frame" x="480" y="72" width="96" height="49"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="UmE-JJ-TgD"/>
@@ -93,9 +93,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5sR-4R-J1o" kind="popoverPresentation" identifier="LogIN" popoverAnchorView="PXx-0H-09w" id="MdQ-tL-icd">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="5sR-4R-J1o" kind="presentation" identifier="LogIN" id="MdQ-tL-icd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +120,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="IA4-gr-ghZ"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="Location" destination="7la-G9-ldl" id="KZc-dh-hE6"/>
                         <outlet property="LogInBTN" destination="PXx-0H-09w" id="5VM-Rz-fLz"/>
@@ -145,23 +142,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-kY-6aX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-kY-6aX">
                                 <rect key="frame" x="209" y="97" width="183" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="1OR-dP-ezF"/>
+                                    <constraint firstAttribute="width" constant="183" id="5IR-jE-DRi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-Zk-4eS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-Zk-4eS">
                                 <rect key="frame" x="209" y="135" width="183" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-ba-awi">
-                                <rect key="frame" x="277" y="173" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-ba-awi">
+                                <rect key="frame" x="281" y="173" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -172,13 +169,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tiY-ba-awi" firstAttribute="leading" secondItem="1ax-H3-Uno" secondAttribute="leading" constant="277" id="Ctq-QP-yaW"/>
-                            <constraint firstItem="jyf-kY-6aX" firstAttribute="top" secondItem="9aJ-hV-Q4n" secondAttribute="bottom" constant="33" id="KCW-V4-cSz"/>
-                            <constraint firstItem="tiY-ba-awi" firstAttribute="top" secondItem="hMx-Zk-4eS" secondAttribute="bottom" constant="8" symbolic="YES" id="hlr-96-Pp3"/>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="top" secondItem="jyf-kY-6aX" secondAttribute="bottom" constant="8" symbolic="YES" id="lca-Na-NJG"/>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="trailing" secondItem="jyf-kY-6aX" secondAttribute="trailing" id="tia-6B-sk3"/>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="leading" secondItem="jyf-kY-6aX" secondAttribute="leading" id="wct-Z9-nLp"/>
-                            <constraint firstItem="jyf-kY-6aX" firstAttribute="centerX" secondItem="1ax-H3-Uno" secondAttribute="centerX" id="zDq-Fv-Rnb"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="top" secondItem="jyf-kY-6aX" secondAttribute="bottom" constant="8" symbolic="YES" id="Hzk-Ug-OAi"/>
+                            <constraint firstItem="tiY-ba-awi" firstAttribute="top" secondItem="hMx-Zk-4eS" secondAttribute="bottom" constant="8" symbolic="YES" id="OOo-6t-rcK"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="trailing" secondItem="jyf-kY-6aX" secondAttribute="trailing" id="WO2-Cy-Omc"/>
+                            <constraint firstItem="jyf-kY-6aX" firstAttribute="leading" secondItem="hMx-Zk-4eS" secondAttribute="leading" id="o0O-cs-z48"/>
+                            <constraint firstItem="jyf-kY-6aX" firstAttribute="centerX" secondItem="1ax-H3-Uno" secondAttribute="centerX" id="p5y-1u-Zkl"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="centerX" secondItem="tiY-ba-awi" secondAttribute="centerX" id="q6l-dM-6g4"/>
+                            <constraint firstItem="jyf-kY-6aX" firstAttribute="top" secondItem="9aJ-hV-Q4n" secondAttribute="bottom" constant="77" id="zOu-ic-wg3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="GbC-on-TEI"/>
