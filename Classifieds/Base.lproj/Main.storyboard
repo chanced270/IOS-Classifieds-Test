@@ -142,25 +142,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lined-Paper-Texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="kRT-1v-Fa7">
+                                <rect key="frame" x="79" y="135" width="463" height="415"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tileable-light-blurs-and-abstract-circles-18.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mz4-Xa-TSs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyf-kY-6aX">
-                                <rect key="frame" x="209" y="97" width="183" height="30"/>
+                                <rect key="frame" x="175" y="247" width="250" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="183" id="5IR-jE-DRi"/>
+                                    <constraint firstAttribute="width" constant="250" id="Dla-j3-wtu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-Zk-4eS">
-                                <rect key="frame" x="209" y="135" width="183" height="30"/>
+                                <rect key="frame" x="175" y="285" width="250" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-ba-awi">
-                                <rect key="frame" x="281" y="173" width="38" height="30"/>
+                                <rect key="frame" x="239" y="323" width="122" height="44"/>
                                 <animations/>
-                                <state key="normal" title="Login"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="oY2-Ie-Zg3"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="LoginAction:" destination="5sR-4R-J1o" eventType="touchUpInside" id="pMg-Hf-Px3"/>
                                 </connections>
@@ -169,13 +182,18 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="top" secondItem="jyf-kY-6aX" secondAttribute="bottom" constant="8" symbolic="YES" id="Hzk-Ug-OAi"/>
-                            <constraint firstItem="tiY-ba-awi" firstAttribute="top" secondItem="hMx-Zk-4eS" secondAttribute="bottom" constant="8" symbolic="YES" id="OOo-6t-rcK"/>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="trailing" secondItem="jyf-kY-6aX" secondAttribute="trailing" id="WO2-Cy-Omc"/>
-                            <constraint firstItem="jyf-kY-6aX" firstAttribute="leading" secondItem="hMx-Zk-4eS" secondAttribute="leading" id="o0O-cs-z48"/>
-                            <constraint firstItem="jyf-kY-6aX" firstAttribute="centerX" secondItem="1ax-H3-Uno" secondAttribute="centerX" id="p5y-1u-Zkl"/>
-                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="centerX" secondItem="tiY-ba-awi" secondAttribute="centerX" id="q6l-dM-6g4"/>
-                            <constraint firstItem="jyf-kY-6aX" firstAttribute="top" secondItem="9aJ-hV-Q4n" secondAttribute="bottom" constant="77" id="zOu-ic-wg3"/>
+                            <constraint firstAttribute="trailing" secondItem="Mz4-Xa-TSs" secondAttribute="trailing" id="4nK-Qd-oYY"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="centerX" secondItem="tiY-ba-awi" secondAttribute="centerX" id="8hR-uo-uAD"/>
+                            <constraint firstItem="Mz4-Xa-TSs" firstAttribute="leading" secondItem="1ax-H3-Uno" secondAttribute="leading" id="IYT-D6-f3u"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="centerY" secondItem="Mz4-Xa-TSs" secondAttribute="centerY" id="NYI-KQ-6v3"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="trailing" secondItem="jyf-kY-6aX" secondAttribute="trailing" id="PBc-Iv-43i"/>
+                            <constraint firstItem="FCJ-FH-rCy" firstAttribute="top" secondItem="tiY-ba-awi" secondAttribute="bottom" constant="233" id="PBv-JA-fUL"/>
+                            <constraint firstItem="Mz4-Xa-TSs" firstAttribute="top" secondItem="1ax-H3-Uno" secondAttribute="top" id="WcM-Xo-uDa"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="leading" secondItem="jyf-kY-6aX" secondAttribute="leading" id="ZzL-lR-Nvn"/>
+                            <constraint firstItem="Mz4-Xa-TSs" firstAttribute="bottom" secondItem="FCJ-FH-rCy" secondAttribute="top" id="fzE-vB-Z4d"/>
+                            <constraint firstItem="Mz4-Xa-TSs" firstAttribute="centerX" secondItem="tiY-ba-awi" secondAttribute="centerX" id="rrv-ih-uyt"/>
+                            <constraint firstItem="hMx-Zk-4eS" firstAttribute="top" secondItem="jyf-kY-6aX" secondAttribute="bottom" constant="8" symbolic="YES" id="uxK-c1-Ej0"/>
+                            <constraint firstItem="tiY-ba-awi" firstAttribute="top" secondItem="hMx-Zk-4eS" secondAttribute="bottom" constant="8" symbolic="YES" id="ya1-dm-I8J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="GbC-on-TEI"/>
@@ -187,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRh-Dn-9Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="1018"/>
+            <point key="canvasLocation" x="1627" y="1018"/>
         </scene>
         <!--Create Listing-->
         <scene sceneID="pcv-Ql-5ss">
@@ -231,4 +249,8 @@
             <point key="canvasLocation" x="225" y="346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Lined-Paper-Texture.png" width="600" height="856"/>
+        <image name="tileable-light-blurs-and-abstract-circles-18.png" width="1024" height="1024"/>
+    </resources>
 </document>
