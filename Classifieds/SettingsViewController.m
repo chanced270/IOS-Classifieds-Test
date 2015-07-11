@@ -15,11 +15,15 @@
 @end
 
 @implementation SettingsViewController
-@synthesize StatusTxt, LogInBTN;
+@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    StatusTxt.text = @"";
+    
      [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
+     [self performSelector:@selector(fetch_location)];
+
     /*
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -41,6 +45,39 @@
     }
      */
     //self.navigationItem.backBarButtonItem.title = @"Back";
+}
+-(void)fetch_location{
+    PFUser *user = [PFUser currentUser];
+    NSString *zipCode = [user objectForKey:@"Location"];
+    NSLog(zipCode);
+    /*
+    NSString *UserLocation = [NSString stringWithFormat:@"%@",user[@"Location"]];
+    NSLog(UserLocation);
+     */
+    if (zipCode > 0) { //added
+    NSLog(@"Initalize fetch location method");
+    if (!self.geocoder) {
+        self.geocoder = [[CLGeocoder alloc] init];
+    }
+    NSString *address = [NSString stringWithFormat:@"%@",zipCode];
+    [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
+        if ([placemarks count] > 0) {
+            CLPlacemark *placemark = [placemarks objectAtIndex:0];
+            CLLocation *location = placemark.location;
+            CLLocationCoordinate2D coordinate = location.coordinate;
+            NSString *citytext = [NSString stringWithFormat:@"%@",[placemarks[0]locality]];
+            NSLog(citytext);
+            Location.text = citytext;
+            NSString *cord= [NSString stringWithFormat:@"%f, %f", coordinate.latitude, coordinate.longitude];
+            NSLog(cord);
+            }
+
+    }];
+    } //added
+    else{
+        NSLog(@"zip code NULL");
+        self.Location.hidden = true;
+    }
 }
 #pragma mark - UIBarButton Methods
 - (void) Logout{
@@ -74,6 +111,7 @@
     else{
         //@selector(performSegueWithIdentifier:);
         StatusTxt.text = @"Sorry you are not signed in.";
+        Location.text = @"";
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log In" style:UIBarButtonItemStylePlain target:self action:@selector(LogIn)];
         //self.navigationItem.rightBarButtonItem.title = @"Log In";
         //self.navigationItem.rightBarButtonItem.action = @selector(LogIn);

@@ -28,9 +28,8 @@
 		1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF681B47861A00819398 /* SystemConfiguration.framework */; };
 		142DE5D71B4E035E00AFF8FB /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */; };
 		142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */; };
-		142DE5DD1B4E14E800AFF8FB /* 45-degree-fabric-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5DC1B4E14E800AFF8FB /* 45-degree-fabric-light.png */; };
 		142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */; };
-		142DE5E31B4E185500AFF8FB /* Lined-Paper-Texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E21B4E185500AFF8FB /* Lined-Paper-Texture.png */; };
+		142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E81B4E1F4000AFF8FB /* 025-2.png */; };
 		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
@@ -93,9 +92,8 @@
 		1411DF681B47861A00819398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-line-bg.png"; path = "../../../../Documents/Classifieds Images/black-line-bg.png"; sourceTree = "<group>"; };
-		142DE5DC1B4E14E800AFF8FB /* 45-degree-fabric-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "45-degree-fabric-light.png"; path = "../../../../Documents/Classifieds Images/45-degree-fabric-light.png"; sourceTree = "<group>"; };
 		142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tileable-light-blurs-and-abstract-circles-18.png"; path = "../../../../Documents/Classifieds Images/tileable-light-blurs-and-abstract-circles-18.png"; sourceTree = "<group>"; };
-		142DE5E21B4E185500AFF8FB /* Lined-Paper-Texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Lined-Paper-Texture.png"; path = "../../../../Documents/Classifieds Images/Lined-Paper-Texture.png"; sourceTree = "<group>"; };
+		142DE5E81B4E1F4000AFF8FB /* 025-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "025-2.png"; path = "../../../../Documents/Classifieds Images/025-2.png"; sourceTree = "<group>"; };
 		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
 		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -271,9 +269,8 @@
 		14F685D81B4CD85600DBA57B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				142DE5E21B4E185500AFF8FB /* Lined-Paper-Texture.png */,
+				142DE5E81B4E1F4000AFF8FB /* 025-2.png */,
 				142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */,
-				142DE5DC1B4E14E800AFF8FB /* 45-degree-fabric-light.png */,
 				142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */,
 				14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */,
 			);
@@ -385,9 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */,
-				142DE5E31B4E185500AFF8FB /* Lined-Paper-Texture.png in Resources */,
-				142DE5DD1B4E14E800AFF8FB /* 45-degree-fabric-light.png in Resources */,
 				1411DF261B477C0E00819398 /* Assets.xcassets in Resources */,
+				142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */,
 				14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
 				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
