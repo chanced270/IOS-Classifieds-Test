@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UCt-Iy-XfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UCt-Iy-XfP">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -123,30 +122,30 @@
                                 <rect key="frame" x="11" y="72" width="573" height="44"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qyC-62-EMi">
                                 <rect key="frame" x="647" y="72" width="107" height="44"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="o2D-fr-BcJ"/>
+                                    <constraint firstAttribute="width" constant="107" id="iHk-xn-695"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ThY-ba-8Qt" firstAttribute="top" secondItem="Mn0-9K-Bm8" secondAttribute="bottom" constant="8" symbolic="YES" id="3aC-Y7-69m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qyC-62-EMi" secondAttribute="trailing" constant="-6" id="UaP-ZD-bLI"/>
-                            <constraint firstItem="P9P-V1-J8w" firstAttribute="top" secondItem="ThY-ba-8Qt" secondAttribute="bottom" constant="908" id="XlE-rr-kau"/>
-                            <constraint firstItem="qyC-62-EMi" firstAttribute="top" secondItem="ThY-ba-8Qt" secondAttribute="top" id="Y7g-Rv-Avg"/>
-                            <constraint firstItem="ThY-ba-8Qt" firstAttribute="leading" secondItem="oDn-db-NZe" secondAttribute="leadingMargin" constant="-9" id="mOo-rI-hnE"/>
-                            <constraint firstItem="qyC-62-EMi" firstAttribute="bottom" secondItem="ThY-ba-8Qt" secondAttribute="bottom" id="oA4-6c-Of5"/>
-                            <constraint firstItem="qyC-62-EMi" firstAttribute="leading" secondItem="ThY-ba-8Qt" secondAttribute="trailing" constant="63" id="zgj-nB-xUS"/>
+                            <constraint firstItem="ThY-ba-8Qt" firstAttribute="top" secondItem="Mn0-9K-Bm8" secondAttribute="bottom" constant="8" symbolic="YES" id="77s-8Y-pnE"/>
+                            <constraint firstItem="P9P-V1-J8w" firstAttribute="top" secondItem="ThY-ba-8Qt" secondAttribute="bottom" constant="908" id="9v5-6s-adG"/>
+                            <constraint firstItem="ThY-ba-8Qt" firstAttribute="leading" secondItem="oDn-db-NZe" secondAttribute="leadingMargin" constant="-5" id="CZw-KX-IVL"/>
+                            <constraint firstItem="qyC-62-EMi" firstAttribute="top" secondItem="ThY-ba-8Qt" secondAttribute="top" id="RAc-Ik-eK6"/>
+                            <constraint firstItem="qyC-62-EMi" firstAttribute="leading" secondItem="ThY-ba-8Qt" secondAttribute="trailing" constant="63" id="YqU-W8-KDt"/>
+                            <constraint firstItem="ThY-ba-8Qt" firstAttribute="bottom" secondItem="qyC-62-EMi" secondAttribute="bottom" id="ZRF-35-UhL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qyC-62-EMi" secondAttribute="trailing" constant="-2" id="mBP-4s-nZd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="GFA-oC-cef">

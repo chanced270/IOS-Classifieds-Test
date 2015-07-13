@@ -8,21 +8,21 @@
 
 #import "SettingsViewController.h"
 #import "SignInViewController.h"
-#warning Need to Implement Location Services.
+
 
 @interface SettingsViewController ()
 
 @end
 
 @implementation SettingsViewController
-@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location;
+@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location, stoptimer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     StatusTxt.text = @"";
-    
+    Location.text = @"";
      [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
-     [self performSelector:@selector(fetch_location)];
+     //[self performSelector:@selector(fetch_location)];
 
     /*
     PFUser *currentUser = [PFUser currentUser];
@@ -46,37 +46,41 @@
      */
     //self.navigationItem.backBarButtonItem.title = @"Back";
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [stoptimer invalidate];
+}
+#pragma mark - Fetch Location
 -(void)fetch_location{
     PFUser *user = [PFUser currentUser];
     NSString *zipCode = [user objectForKey:@"Location"];
     NSLog(zipCode);
-    /*
-    NSString *UserLocation = [NSString stringWithFormat:@"%@",user[@"Location"]];
-    NSLog(UserLocation);
-     */
     if (zipCode > 0) { //added
-    NSLog(@"Initalize fetch location method");
-    if (!self.geocoder) {
-        self.geocoder = [[CLGeocoder alloc] init];
-    }
-    NSString *address = [NSString stringWithFormat:@"%@",zipCode];
-    [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
-        if ([placemarks count] > 0) {
-            CLPlacemark *placemark = [placemarks objectAtIndex:0];
-            CLLocation *location = placemark.location;
-            CLLocationCoordinate2D coordinate = location.coordinate;
-            NSString *citytext = [NSString stringWithFormat:@"%@",[placemarks[0]locality]];
-            NSLog(citytext);
-            Location.text = citytext;
-            NSString *cord= [NSString stringWithFormat:@"%f, %f", coordinate.latitude, coordinate.longitude];
-            NSLog(cord);
+        NSLog(@"Initalize fetch location method");
+        if (!self.geocoder) {
+            self.geocoder = [[CLGeocoder alloc] init];
+        }
+        NSString *address = [NSString stringWithFormat:@"%@",zipCode];
+        [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
+            if ([placemarks count] > 0) {
+                CLPlacemark *placemark = [placemarks objectAtIndex:0];
+                CLLocation *location = placemark.location;
+                CLLocationCoordinate2D coordinate = location.coordinate;
+                NSString *citytext = [NSString stringWithFormat:@"%@",[placemarks[0]locality]];
+                NSLog(citytext);
+                Location.text = citytext;
+                Location.hidden = false;
+                NSString *cord= [NSString stringWithFormat:@"%f, %f", coordinate.latitude, coordinate.longitude];
+                NSLog(cord);
             }
 
-    }];
+        }];
     } //added
     else{
-        NSLog(@"zip code NULL");
-        self.Location.hidden = true;
+        NSLog(@"Zip Code Null");
+        Location.hidden = true;
     }
 }
 #pragma mark - UIBarButton Methods
@@ -84,6 +88,7 @@
     NSLog(@"LogOut");
     [PFUser logOut];
     PFUser *currentUser = [PFUser currentUser]; // this will now be nil
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
 }
 -(void) LogIn{
     NSLog(@"LogIN");
@@ -97,6 +102,7 @@
 
 - (void)updateTime:(NSTimer *)timer{
 #pragma mark - Update Label
+    [self performSelector:@selector(fetch_location)];
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSString *user = [currentUser username];
@@ -107,15 +113,20 @@
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log Out" style:UIBarButtonItemStylePlain target:self action:@selector(Logout)];
         //self.navigationItem.rightBarButtonItem.title = @"Log Out";
         //self.navigationItem.rightBarButtonItem.action = @selector(Logout);
+        [timer invalidate];
+        //timer = _stoptimer; Declaration Variable first then implent what the vaiable is for
     }
     else{
         //@selector(performSegueWithIdentifier:);
         StatusTxt.text = @"Sorry you are not signed in.";
         Location.text = @"";
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log In" style:UIBarButtonItemStylePlain target:self action:@selector(LogIn)];
+ 
         //self.navigationItem.rightBarButtonItem.title = @"Log In";
         //self.navigationItem.rightBarButtonItem.action = @selector(LogIn);
-    }}
+    }
+    stoptimer = timer;
+}
 
 /*
 #pragma mark - Navigation

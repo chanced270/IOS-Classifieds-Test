@@ -66,21 +66,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
                                 <rect key="frame" x="12" y="72" width="440" height="49"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
                                 <rect key="frame" x="480" y="72" width="96" height="49"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="UmE-JJ-TgD"/>
+                                    <constraint firstAttribute="width" constant="96" id="POh-6V-Wga"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-0H-09w">
@@ -100,15 +100,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" constant="-8" id="3en-mT-iUZ"/>
-                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="WtF-6H-ZCt" secondAttribute="bottom" constant="479" id="7To-Ku-kHf"/>
-                            <constraint firstItem="7la-G9-ldl" firstAttribute="baseline" secondItem="WtF-6H-ZCt" secondAttribute="baseline" id="9xw-1i-3VQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7la-G9-ldl" secondAttribute="trailing" constant="4" id="JMU-Fp-n9B"/>
-                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="Qka-fP-Mex"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="firstBaseline" secondItem="7la-G9-ldl" secondAttribute="firstBaseline" id="Cie-M6-1bd"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="8" symbolic="YES" id="I1H-Oz-sMR"/>
+                            <constraint firstItem="QhC-1h-t1a" firstAttribute="top" secondItem="WtF-6H-ZCt" secondAttribute="bottom" constant="479" id="O7A-Tu-q03"/>
+                            <constraint firstItem="WtF-6H-ZCt" firstAttribute="leading" secondItem="6Un-am-bOm" secondAttribute="leadingMargin" constant="-4" id="OYh-CC-kKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7la-G9-ldl" secondAttribute="trailing" constant="8" id="R5K-ZY-Noc"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="top" secondItem="q66-Pc-zqY" secondAttribute="bottom" constant="7" id="Rlj-p2-Lgf"/>
-                            <constraint firstItem="7la-G9-ldl" firstAttribute="firstBaseline" secondItem="WtF-6H-ZCt" secondAttribute="firstBaseline" id="Ybq-go-nSJ"/>
-                            <constraint firstItem="7la-G9-ldl" firstAttribute="leading" secondItem="WtF-6H-ZCt" secondAttribute="trailing" constant="28" id="kcs-Wy-OQ1"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="baseline" secondItem="WtF-6H-ZCt" secondAttribute="baseline" id="Uay-LR-06j"/>
                             <constraint firstItem="PXx-0H-09w" firstAttribute="trailing" secondItem="6Un-am-bOm" secondAttribute="trailingMargin" id="m1B-tV-I49"/>
+                            <constraint firstItem="7la-G9-ldl" firstAttribute="leading" secondItem="WtF-6H-ZCt" secondAttribute="trailing" constant="28" id="zqW-or-NBe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
