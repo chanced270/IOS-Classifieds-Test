@@ -41,6 +41,11 @@
 #warning Incomplete implementation, return the number of rows
     return 0;
 }
+#pragma mark - Toolbar Functions
+- (IBAction)Category:(id)sender {
+    NSLog(@"Category Clicked");
+}
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
