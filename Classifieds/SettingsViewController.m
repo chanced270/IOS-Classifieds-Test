@@ -15,7 +15,7 @@
 @end
 
 @implementation SettingsViewController
-@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location, stoptimer;
+@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location, stoptimer, SegmentedControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -126,6 +126,21 @@
         //self.navigationItem.rightBarButtonItem.action = @selector(LogIn);
     }
     stoptimer = timer;
+}
+#pragma mark - Segment Controller 
+// Not Implented on iPadStoryBoard
+- (IBAction)SegmentController:(id)sender {
+    
+    if (SegmentedControl.selectedSegmentIndex == 0) {
+        NSLog(@"Account Info");
+    }
+    if (SegmentedControl.selectedSegmentIndex == 1) {
+        NSLog(@"Contact Info");
+    }
+    if (SegmentedControl.selectedSegmentIndex == 2) {
+        NSLog(@"Billing");
+    }
+    
 }
 
 /*

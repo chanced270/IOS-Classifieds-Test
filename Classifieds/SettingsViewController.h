@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface SettingsViewController : UIViewController {
+@interface SettingsViewController : UIViewController  {
     CLGeocoder *_geocoder;
 }
 @property (weak, nonatomic) IBOutlet UILabel *StatusTxt;
@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *Location;
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (weak, nonatomic) NSTimer *stoptimer;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *SegmentedControl;
 
 @end
