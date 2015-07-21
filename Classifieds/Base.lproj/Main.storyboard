@@ -217,11 +217,13 @@
                     <connections>
                         <outlet property="FromValue" destination="RLZ-M9-a4C" id="p4g-8d-hub"/>
                         <outlet property="ToValue" destination="aoP-N0-e9d" id="NbW-XK-7LR"/>
+                        <segue destination="67F-lS-dqu" kind="show" identifier="FilterData" id="SgY-NR-tqM"/>
+                        <segue destination="67F-lS-dqu" kind="show" identifier="CloseFilterData" id="k3v-Id-FFG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGt-XB-6rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="491"/>
+            <point key="canvasLocation" x="1104" y="531"/>
         </scene>
         <!--Settings-->
         <scene sceneID="gRd-JX-Ww4">
@@ -235,14 +237,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome Text" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WtF-6H-ZCt">
                                 <rect key="frame" x="12" y="72" width="440" height="49"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="location" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7la-G9-ldl">
                                 <rect key="frame" x="480" y="72" width="96" height="49"/>
                                 <animations/>
                                 <constraints>
@@ -423,4 +425,7 @@
         <image name="gear-icon.png" width="40" height="40"/>
         <image name="tileable-light-blurs-and-abstract-circles-18.png" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="k3v-Id-FFG"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,18 +7,17 @@
 //
 
 #import "ItemListTableViewController.h"
-#import "FilterTableViewController.h"
 
 @interface ItemListTableViewController ()
 
 @end
 
 @implementation ItemListTableViewController
+@synthesize FromValue,ToValue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -30,6 +29,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    //loads NSStrings from FilterTableVC
+    self.ToValue = _ToVal;
+    self.FromValue = _FromVal;
+    NSString *test = [NSString stringWithFormat:@"From: %d To: %d",FromValue,ToValue];
+    NSLog(test);
+    
+   }
+
 
 #pragma mark - Table view data source
 

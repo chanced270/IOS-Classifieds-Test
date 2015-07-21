@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemListTableViewController : UITableViewController
+@property  int FromVal;
+@property  int ToVal;
+@property  int FromValue;
+@property int ToValue;
 
 @end

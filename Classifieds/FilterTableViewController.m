@@ -7,6 +7,7 @@
 //
 
 #import "FilterTableViewController.h"
+#import "ItemListTableViewController.h"
 
 @interface FilterTableViewController ()
 
@@ -55,16 +56,10 @@
         //if int value from the Input Field "Price Range: From is greater than 0 then do:...."
         NSLog(@"From Value Greater than 0");
     }
-    /*
-    if (ToInt < fromInt) {
-        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Error" message:@"To Value can not be less than From Value" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
-        [error show];
-    }
- */
-#warning Close Method Not working
+    [self performSegueWithIdentifier:@"FilterData" sender:nil];
 }
 - (IBAction)CloseView:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"CloseFilterData" sender:nil];
 }
 /*
 -(void)touchesBegan:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
@@ -118,14 +113,20 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier]isEqualToString:@"FilterData"]) {
+        NSLog(@"Apply Filter");
+        ItemListTableViewController *ItemList = [[ItemListTableViewController alloc]init];
+        ItemList.FromVal = fromInt;
+        ItemList.ToVal = ToInt;
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
