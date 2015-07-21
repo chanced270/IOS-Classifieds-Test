@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FilterTableViewController : UITableViewController
-@property (assign)  int fromInt;
-@property (assign) int ToInt;
+@property  int fromInt;
+@property  int ToInt;
 @property NSArray *filterArray;
 @property (weak, nonatomic) IBOutlet UITextField *FromValue;
 @property (weak, nonatomic) IBOutlet UITextField *ToValue;

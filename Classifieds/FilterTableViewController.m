@@ -120,7 +120,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier]isEqualToString:@"FilterData"]) {
         NSLog(@"Apply Filter");
-        ItemListTableViewController *ItemList = [[ItemListTableViewController alloc]init];
+        ItemListTableViewController *ItemList = (ItemListTableViewController *)segue.destinationViewController;
         ItemList.FromVal = fromInt;
         ItemList.ToVal = ToInt;
     }
