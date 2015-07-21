@@ -31,6 +31,7 @@
 		142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */; };
 		142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E81B4E1F4000AFF8FB /* 025-2.png */; };
 		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
+		1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454B17C1B5C542900AE86FD /* FilterTableViewController.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */; };
 		14AA6AC41B55C5BD00120823 /* gear-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC31B55C5BD00120823 /* gear-icon.png */; };
@@ -98,6 +99,8 @@
 		142DE5E81B4E1F4000AFF8FB /* 025-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "025-2.png"; path = "../../../../Documents/Classifieds Images/025-2.png"; sourceTree = "<group>"; };
 		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
 		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
+		1454B17B1B5C542900AE86FD /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
+		1454B17C1B5C542900AE86FD /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-gear-128.png"; sourceTree = "<group>"; };
 		14AA6AC31B55C5BD00120823 /* gear-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear-icon.png"; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				1411DF191B477C0E00819398 /* AppDelegate.h */,
 				1411DF1A1B477C0E00819398 /* AppDelegate.m */,
 				1411DF1F1B477C0E00819398 /* Main.storyboard */,
+				1454B17B1B5C542900AE86FD /* FilterTableViewController.h */,
+				1454B17C1B5C542900AE86FD /* FilterTableViewController.m */,
 				142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */,
 				1411DF511B4783E500819398 /* Main View */,
 				1411DF551B47840E00819398 /* SettingsAndUser */,
@@ -431,6 +436,7 @@
 			files = (
 				1411DF1B1B477C0E00819398 /* AppDelegate.m in Sources */,
 				1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */,
+				1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
 				1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */,
 				142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */,

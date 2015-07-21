@@ -1,23 +1,22 @@
 //
-//  ItemListTableViewController.m
+//  FilterTableViewController.m
 //  Classifieds
 //
-//  Created by Zackary Divine on 7/3/15.
+//  Created by Zackary Divine on 7/19/15.
 //  Copyright © 2015 Zackary Divine. All rights reserved.
 //
 
-#import "ItemListTableViewController.h"
 #import "FilterTableViewController.h"
 
-@interface ItemListTableViewController ()
+@interface FilterTableViewController ()
 
 @end
 
-@implementation ItemListTableViewController
+@implementation FilterTableViewController
+@synthesize filterArray,FilterLog,fromInt,FromValue,ToInt,ToValue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Home";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,19 +33,46 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-#pragma mark - Toolbar Functions
-- (IBAction)Category:(id)sender {
-    NSLog(@"Category Clicked");
-}
 
+    return 3;
+}
+-(void)tableView:(nonnull UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    [FromValue resignFirstResponder];
+    [ToValue resignFirstResponder];
+}
+- (IBAction)ApplyFilter:(id)sender {
+#pragma mark - Intiallize numbers From Price Range
+    fromInt = [FromValue.text intValue];
+    ToInt = [ToValue.text intValue];
+    NSString *testFrom = [NSString stringWithFormat:@"From: %d To: %d",fromInt,ToInt];
+    NSLog(testFrom);
+    
+    if (fromInt > 0) {
+        //if int value from the Input Field "Price Range: From is greater than 0 then do:...."
+        NSLog(@"From Value Greater than 0");
+    }
+    /*
+    if (ToInt < fromInt) {
+        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Error" message:@"To Value can not be less than From Value" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+        [error show];
+    }
+ */
+#warning Close Method Not working
+}
+- (IBAction)CloseView:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+/*
+-(void)touchesBegan:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    [self.FromValue resignFirstResponder];
+    [self.ToValue resignFirstResponder];
+    
+}
+ */
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
