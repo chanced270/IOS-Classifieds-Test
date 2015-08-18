@@ -15,9 +15,7 @@
 }
 @property (weak, nonatomic) IBOutlet UILabel *StatusTxt;
 @property (weak, nonatomic) IBOutlet UIButton *LogInBTN;
-@property (weak, nonatomic) IBOutlet UILabel *Location;
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (weak, nonatomic) NSTimer *stoptimer;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *SegmentedControl;
 
 @end

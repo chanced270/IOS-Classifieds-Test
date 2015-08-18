@@ -1,4 +1,4 @@
-//
+    //
 //  SettingsViewController.m
 //  Classifieds
 //
@@ -15,12 +15,11 @@
 @end
 
 @implementation SettingsViewController
-@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, Location, stoptimer, SegmentedControl;
+@synthesize StatusTxt, LogInBTN, geocoder = _geocoder, stoptimer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     StatusTxt.text = @"";
-    Location.text = @"";
      [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
      //[self performSelector:@selector(fetch_location)];
 
@@ -70,9 +69,14 @@
                 CLLocationCoordinate2D coordinate = location.coordinate;
                 NSString *citytext = [NSString stringWithFormat:@"%@",[placemarks[0]locality]];
                 NSLog(citytext);
-                Location.text = citytext;
-                Location.hidden = false;
+                NSString *userLocation = [NSString stringWithFormat:@"User Location: %@",citytext];
+                self.navigationItem.prompt = userLocation;
+                float lat = coordinate.latitude;
+                float lon = coordinate.longitude;
                 NSString *cord= [NSString stringWithFormat:@"%f, %f", coordinate.latitude, coordinate.longitude];
+                PFGeoPoint *UserGeopoint = [PFGeoPoint geoPointWithLatitude:lat longitude:lon];
+                user[@"LocationGeoPoint"] = UserGeopoint;
+                [user saveInBackground];
                 NSLog(cord);
             }
 
@@ -80,7 +84,6 @@
     } //added
     else{
         NSLog(@"Zip Code Null");
-        Location.hidden = true;
     }
 }
 #pragma mark - UIBarButton Methods
@@ -119,28 +122,12 @@
     else{
         //@selector(performSegueWithIdentifier:);
         StatusTxt.text = @"Sorry you are not signed in.";
-        Location.text = @"";
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Log In" style:UIBarButtonItemStylePlain target:self action:@selector(LogIn)];
  
         //self.navigationItem.rightBarButtonItem.title = @"Log In";
         //self.navigationItem.rightBarButtonItem.action = @selector(LogIn);
     }
     stoptimer = timer;
-}
-#pragma mark - Segment Controller 
-// Not Implented on iPadStoryBoard
-- (IBAction)SegmentController:(id)sender {
-    
-    if (SegmentedControl.selectedSegmentIndex == 0) {
-        NSLog(@"Account Info");
-    }
-    if (SegmentedControl.selectedSegmentIndex == 1) {
-        NSLog(@"Contact Info");
-    }
-    if (SegmentedControl.selectedSegmentIndex == 2) {
-        NSLog(@"Billing");
-    }
-    
 }
 
 /*

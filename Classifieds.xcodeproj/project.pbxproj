@@ -31,6 +31,8 @@
 		142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */; };
 		142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E81B4E1F4000AFF8FB /* 025-2.png */; };
 		142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FC3841B479EFD007D0944 /* SignInViewController.m */; };
+		14316C1B1B60B3EF0082A3F0 /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14316C1A1B60B3EF0082A3F0 /* ItemListTableCell.xib */; };
+		14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */; };
 		1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454B17C1B5C542900AE86FD /* FilterTableViewController.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */; };
@@ -44,6 +46,7 @@
 		14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */; };
 		14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */; };
 		14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */; };
+		14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */; };
 		14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +102,9 @@
 		142DE5E81B4E1F4000AFF8FB /* 025-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "025-2.png"; path = "../../../../Documents/Classifieds Images/025-2.png"; sourceTree = "<group>"; };
 		142FC3831B479EFD007D0944 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = ../SignInViewController.h; sourceTree = "<group>"; };
 		142FC3841B479EFD007D0944 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = ../SignInViewController.m; sourceTree = "<group>"; };
+		14316C1A1B60B3EF0082A3F0 /* ItemListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemListTableCell.xib; sourceTree = "<group>"; };
+		14316C1C1B60B4E70082A3F0 /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
 		1454B17B1B5C542900AE86FD /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
 		1454B17C1B5C542900AE86FD /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 		14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		14E4A6231B5EE75A00FC38C3 /* CreatePostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostController.h; sourceTree = "<group>"; };
+		14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostController.m; sourceTree = "<group>"; };
 		14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stock_41__paper_texture_bigger_by_our_stock.png; path = ../../../../Downloads/stock_41__paper_texture_bigger_by_our_stock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,8 +239,10 @@
 		1411DF511B4783E500819398 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				143E2FC01B5EE9E600A35272 /* CreatePost */,
 				1411DF4C1B47808300819398 /* ItemListTableViewController.h */,
 				1411DF4D1B47808300819398 /* ItemListTableViewController.m */,
+				14316C1F1B60B4ED0082A3F0 /* Item List Cell */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -274,6 +284,25 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		14316C1F1B60B4ED0082A3F0 /* Item List Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14316C1A1B60B3EF0082A3F0 /* ItemListTableCell.xib */,
+				14316C1C1B60B4E70082A3F0 /* ItemTableViewCell.h */,
+				14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */,
+			);
+			name = "Item List Cell";
+			sourceTree = "<group>";
+		};
+		143E2FC01B5EE9E600A35272 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				14E4A6231B5EE75A00FC38C3 /* CreatePostController.h */,
+				14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */,
+			);
+			name = CreatePost;
 			sourceTree = "<group>";
 		};
 		1452364B1B56DB9B00BA373B /* Container */ = {
@@ -406,6 +435,7 @@
 				14AA6AC41B55C5BD00120823 /* gear-icon.png in Resources */,
 				14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
+				14316C1B1B60B3EF0082A3F0 /* ItemListTableCell.xib in Resources */,
 				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
 				14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */,
 				142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */,
@@ -434,10 +464,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */,
 				1411DF1B1B477C0E00819398 /* AppDelegate.m in Sources */,
 				1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */,
 				1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
+				14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */,
 				1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */,
 				142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */,
 				1411DF181B477C0E00819398 /* main.m in Sources */,

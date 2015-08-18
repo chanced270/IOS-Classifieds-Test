@@ -51,11 +51,6 @@
     ToInt = [ToValue.text intValue];
     NSString *testFrom = [NSString stringWithFormat:@"From: %d To: %d",fromInt,ToInt];
     NSLog(testFrom);
-    
-    if (fromInt > 0) {
-        //if int value from the Input Field "Price Range: From is greater than 0 then do:...."
-        NSLog(@"From Value Greater than 0");
-    }
     [self performSegueWithIdentifier:@"FilterData" sender:nil];
 }
 - (IBAction)CloseView:(id)sender {

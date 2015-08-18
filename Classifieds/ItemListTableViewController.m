@@ -7,17 +7,19 @@
 //
 
 #import "ItemListTableViewController.h"
+#import "ItemTableViewCell.h"
 
 @interface ItemListTableViewController ()
 
 @end
 
 @implementation ItemListTableViewController
-@synthesize FromValue,ToValue;
+@synthesize FromValue,ToValue,ItemArray,ItemList,Query,FromNumValue,ToNumValue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
+    [self performSelector:@selector(ParseItemListSearch)];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -36,20 +38,47 @@
     self.FromValue = _FromVal;
     NSString *test = [NSString stringWithFormat:@"From: %d To: %d",FromValue,ToValue];
     NSLog(test);
-    
+    FromNumValue = [NSNumber numberWithInt:FromValue];
+    ToNumValue = [NSNumber numberWithInt:ToValue];
    }
+#pragma mark -Search Post Data Base
+-(void)ParseItemListSearch{
+    PFUser *currentUser = [PFUser currentUser];
+    //PFGeoPoint *UserLocation = [currentUser objectForKey:@"LocationGeoPoint"];
+    Query = [PFQuery queryWithClassName:@"Posts"];
+   [Query whereKey:@"LocationGeopoint" nearGeoPoint:[currentUser objectForKey:@"LocationGeoPoint"]withinMiles:30];
+#pragma mark -Search for objects
+    [Query findObjectsInBackgroundWithBlock:^(NSArray * __nullable objects, NSError * __nullable error) {
+        if (!error) {
+            ItemArray = objects;
+        }
+        [self.ItemList reloadData];
+    }];
+    
+}
+/*
+#pragma mark - filter Search
+if (ToNumValue > 0) {
+    NSLog(@"Set To Value");
+    [Query whereKey:@"Price" lessThanOrEqualTo:ToNumValue];
+}
+if (FromNumValue > 0) {
+    NSLog(@"Set From Value");
+    [Query whereKey:@"Price" greaterThanOrEqualTo:FromNumValue];
+}
+ */
 
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return [ItemArray count];
 }
 #pragma mark - Toolbar Functions
 - (IBAction)Category:(id)sender {
@@ -57,15 +86,28 @@
 }
 
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *CellIdentifier = @"Cell";
     
+    ItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ItemListTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    // Configure the cell with the textContent of the Post as the cell's text label
+    NSDictionary *TempDict = [ItemArray objectAtIndex:indexPath.row];
+    //PFObject *referal = [_ViewRefArray objectAtIndex:indexPath.row];
+    cell.DatePublished.text = [TempDict objectForKey:@"CreatedAt"];
+    cell.Title.text = [TempDict objectForKey:@"Title"];
+    cell.Location.text = [TempDict objectForKey:@"Location"];
+    NSString *PriceString = [NSString stringWithFormat:@"$%@",[TempDict objectForKey:@"Price"]];
+    cell.Price.text = PriceString;
     return cell;
+
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
