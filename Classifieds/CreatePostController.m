@@ -15,7 +15,7 @@
 @end
 
 @implementation CreatePostController
-@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude,ImageView,PickerView1;
+@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude,ImageView,PickerView1,AddImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,8 +49,10 @@
         
     }
     //ImageView.contentMode = UIViewContentModeScaleAspectFit;
-   
-    ImageView.image = _ObjectImage;
+            ImageView.image = _ObjectImage;
+    if (ImageView.image) {
+        AddImage.hidden = true;
+    }
 }
 - (IBAction)TakePhoto:(id)sender {
 UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
@@ -61,10 +63,20 @@ UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
 }
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    // CGSize sizes = CGSizeMake(240, 128);
-    //CGSize sizes = CGSizeMake(240, 128);
-    _ObjectImage = image;
+    CGSize sizes = CGSizeMake(240, 128);
+    UIImage *Resized = [self scaleImage:image toSize:sizes];
+    _ObjectImage = Resized;
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (UIImage *) scaleImage:(UIImage*)image toSize:(CGSize)newSize {
+    //UIGraphicsBeginImageContext(newSize);
+    // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
+    // Pass 1.0 to force exact pixel size.
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
