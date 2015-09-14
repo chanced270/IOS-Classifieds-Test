@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface CreatePostController : UIViewController {
+@interface CreatePostController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
     CLGeocoder *_geocoder;
 }
 @property (weak, nonatomic) IBOutlet UITextField *Title;
@@ -20,5 +20,9 @@
 @property NSString *Cord;
 @property float latitude;
 @property float longitude;
+@property (weak, nonatomic) IBOutlet UIButton *AddImage;
+@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
+@property UIImagePickerController *PickerView1;
+@property UIImage *ObjectImage;
 
 @end

@@ -8,13 +8,14 @@
 
 #import "CreatePostController.h"
 #import <Parse/Parse.h>
+//#import <AVFoundation/AVFoundation.h>
 
 @interface CreatePostController ()
 
 @end
 
 @implementation CreatePostController
-@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude;
+@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude,ImageView,PickerView1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,8 +48,28 @@
         }];
         
     }
+    //ImageView.contentMode = UIViewContentModeScaleAspectFit;
+   
+    ImageView.image = _ObjectImage;
+}
+- (IBAction)TakePhoto:(id)sender {
+UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
+    PickerView.sourceType = UIImagePickerControllerSourceTypeCamera;
+    PickerView.delegate = self;
+    PickerView.editing = YES;
+    [self presentViewController:PickerView animated:YES completion:nil];
+}
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    // CGSize sizes = CGSizeMake(240, 128);
+    //CGSize sizes = CGSizeMake(240, 128);
+    _ObjectImage = image;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:true completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
