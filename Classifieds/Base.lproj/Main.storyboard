@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Dp-7N-P5x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Dp-7N-P5x">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -110,7 +111,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-j8-Ykl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-j8-Ykl">
                                                     <rect key="frame" x="254" y="8" width="92" height="21"/>
                                                     <animations/>
                                                     <constraints>
@@ -142,6 +143,9 @@
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ETi-Fm-9XO">
                                                     <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                                     <animations/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="38" y="31" width="534" height="31"/>
+                                                    </variation>
                                                 </slider>
                                             </subviews>
                                             <animations/>
@@ -160,11 +164,11 @@
                                                     <exclude reference="ETi-Fm-9XO"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="KRq-cD-vVg"/>
-                                                    <exclude reference="Ugr-7A-JTT"/>
                                                     <exclude reference="SFx-YE-AJw"/>
                                                     <exclude reference="VHx-d9-SNI"/>
                                                     <exclude reference="qMI-DW-Lvd"/>
+                                                    <exclude reference="KRq-cD-vVg"/>
+                                                    <exclude reference="Ugr-7A-JTT"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -172,13 +176,13 @@
                                                     <include reference="ETi-Fm-9XO"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="SFx-YE-AJw"/>
+                                                    <include reference="VHx-d9-SNI"/>
+                                                    <include reference="qMI-DW-Lvd"/>
                                                     <exclude reference="FiK-7Y-CTZ"/>
                                                     <include reference="KRq-cD-vVg"/>
                                                     <exclude reference="PUG-Pt-GYm"/>
                                                     <include reference="Ugr-7A-JTT"/>
-                                                    <include reference="SFx-YE-AJw"/>
-                                                    <include reference="VHx-d9-SNI"/>
-                                                    <include reference="qMI-DW-Lvd"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -197,6 +201,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="440" y="14" width="121" height="21"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <animations/>
@@ -410,18 +417,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Htr-B8-x8G">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="80" y="198" width="440" height="128"/>
+                                </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zby-RH-600">
                                 <rect key="frame" x="215" y="122" width="170" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="115" y="122" width="370" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-eM-kw2">
                                 <rect key="frame" x="215" y="160" width="170" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="115" y="160" width="370" height="30"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Post Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-iC-bY0">
                                 <rect key="frame" x="215" y="86" width="170" height="30"/>
@@ -431,7 +447,8 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="115" y="86" width="370" height="30"/>
                                     <mask key="constraints">
                                         <exclude reference="6uZ-Jz-R3W"/>
                                     </mask>
@@ -441,6 +458,9 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Add Image"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="263" y="247" width="74" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="TakePhoto:" destination="QPQ-tU-7dY" eventType="touchUpInside" id="0N0-zM-Gah"/>
                                 </connections>
@@ -479,6 +499,12 @@
                                 <exclude reference="bKu-AN-pzI"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="cJN-7Y-Qmk"/>
+                                <exclude reference="mTO-AF-JfL"/>
+                                <exclude reference="EiH-uG-q0n"/>
+                                <exclude reference="JC4-T8-Ixc"/>
+                                <exclude reference="mS2-QP-oU3"/>
+                                <exclude reference="zJ6-YQ-96T"/>
                                 <exclude reference="1gO-I8-brg"/>
                                 <exclude reference="a52-vm-WLx"/>
                                 <exclude reference="gao-S0-682"/>
@@ -488,12 +514,6 @@
                                 <exclude reference="4Gn-4T-S3s"/>
                                 <exclude reference="Izy-U5-Csb"/>
                                 <exclude reference="TA6-aK-Nxx"/>
-                                <exclude reference="EiH-uG-q0n"/>
-                                <exclude reference="JC4-T8-Ixc"/>
-                                <exclude reference="mS2-QP-oU3"/>
-                                <exclude reference="zJ6-YQ-96T"/>
-                                <exclude reference="cJN-7Y-Qmk"/>
-                                <exclude reference="mTO-AF-JfL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -502,6 +522,12 @@
                                 <include reference="bKu-AN-pzI"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="cJN-7Y-Qmk"/>
+                                <include reference="mTO-AF-JfL"/>
+                                <include reference="EiH-uG-q0n"/>
+                                <include reference="JC4-T8-Ixc"/>
+                                <include reference="mS2-QP-oU3"/>
+                                <include reference="zJ6-YQ-96T"/>
                                 <include reference="1gO-I8-brg"/>
                                 <include reference="a52-vm-WLx"/>
                                 <exclude reference="dTz-xH-KDy"/>
@@ -519,12 +545,6 @@
                                 <include reference="Izy-U5-Csb"/>
                                 <exclude reference="Qgf-ll-Nja"/>
                                 <include reference="TA6-aK-Nxx"/>
-                                <include reference="EiH-uG-q0n"/>
-                                <include reference="JC4-T8-Ixc"/>
-                                <include reference="mS2-QP-oU3"/>
-                                <include reference="zJ6-YQ-96T"/>
-                                <include reference="cJN-7Y-Qmk"/>
-                                <include reference="mTO-AF-JfL"/>
                             </mask>
                         </variation>
                     </view>

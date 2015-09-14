@@ -103,6 +103,13 @@ if (FromNumValue > 0) {
     cell.DatePublished.text = [TempDict objectForKey:@"CreatedAt"];
     cell.Title.text = [TempDict objectForKey:@"Title"];
     cell.Location.text = [TempDict objectForKey:@"Location"];
+    PFObject *ItemObject = [ItemArray objectAtIndex:indexPath.row];
+    PFFile *ItemImageFile = [ItemObject objectForKey:@"Image"];
+    [ItemImageFile getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
+        if (!error) {
+            cell.ItemImage.image = [UIImage imageWithData:data];
+        }
+    }];
     NSString *PriceString = [NSString stringWithFormat:@"$%@",[TempDict objectForKey:@"Price"]];
     cell.Price.text = PriceString;
     return cell;
