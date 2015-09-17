@@ -15,7 +15,7 @@
 @end
 
 @implementation CreatePostController
-@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude,ImageView,PickerView1,AddImage;
+@synthesize Title,Price,PriceInt,Category, geocoder= _geocoder,longitude,latitude,ImageView,PickerView1,AddImage,Localization;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,6 +38,7 @@
                 CLLocationCoordinate2D coordinate = location.coordinate;
                 NSString *cord= [NSString stringWithFormat:@"%f, %f", coordinate.latitude, coordinate.longitude];
                 NSLog(cord);
+                Localization = placemark.locality;
                 float lat = coordinate.latitude;
                 float lon = coordinate.longitude;
                 longitude = lon;
@@ -92,7 +93,9 @@ UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
     CreatePost[@"Title"] = Title.text;
     CreatePost[@"Price"] = [NSNumber numberWithInt:PriceInteger];
     CreatePost[@"Category"] = Category.text;
-    CreatePost[@"Location"] = _Cord;
+    CreatePost[@"Location"] = Localization;
+#warning Implementation of Paid Posting not implemented yet
+   // CreatePost[@"Pp"] = @"true";
     NSData *ImageData = UIImagePNGRepresentation(ImageView.image);
     PFFile *ImageFile = [PFFile fileWithData:ImageData];
     CreatePost[@"Image"] = ImageFile;

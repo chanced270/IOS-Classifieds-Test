@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
 @property UIImagePickerController *PickerView1;
 @property UIImage *ObjectImage;
+@property NSString *Localization;
 
 @end

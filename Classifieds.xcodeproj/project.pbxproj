@@ -35,6 +35,7 @@
 		14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */; };
 		1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454B17C1B5C542900AE86FD /* FilterTableViewController.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
+		1484E96B1BAB244B0002EBEF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484E96A1BAB244B0002EBEF /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */; };
 		14AA6AC41B55C5BD00120823 /* gear-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC31B55C5BD00120823 /* gear-icon.png */; };
 		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
@@ -108,6 +109,8 @@
 		1454B17B1B5C542900AE86FD /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
 		1454B17C1B5C542900AE86FD /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1484E9691BAB244B0002EBEF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		1484E96A1BAB244B0002EBEF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-gear-128.png"; sourceTree = "<group>"; };
 		14AA6AC31B55C5BD00120823 /* gear-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear-icon.png"; sourceTree = "<group>"; };
 		14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -250,6 +253,7 @@
 		1411DF551B47840E00819398 /* SettingsAndUser */ = {
 			isa = PBXGroup;
 			children = (
+				1484E96C1BAB24880002EBEF /* Sign Up */,
 				1452364B1B56DB9B00BA373B /* Container */,
 				142FC3831B479EFD007D0944 /* SignInViewController.h */,
 				142FC3841B479EFD007D0944 /* SignInViewController.m */,
@@ -310,6 +314,15 @@
 			children = (
 			);
 			name = Container;
+			sourceTree = "<group>";
+		};
+		1484E96C1BAB24880002EBEF /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				1484E9691BAB244B0002EBEF /* SignUpViewController.h */,
+				1484E96A1BAB244B0002EBEF /* SignUpViewController.m */,
+			);
+			name = "Sign Up";
 			sourceTree = "<group>";
 		};
 		14F685D81B4CD85600DBA57B /* Images */ = {
@@ -470,6 +483,7 @@
 				1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
 				14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */,
+				1484E96B1BAB244B0002EBEF /* SignUpViewController.m in Sources */,
 				1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */,
 				142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */,
 				1411DF181B477C0E00819398 /* main.m in Sources */,

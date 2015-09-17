@@ -25,7 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)LoginAction:(id)sender {
-    [PFUser logInWithUsernameInBackground:@"demo" password:@"demo"
+    [PFUser logInWithUsernameInBackground:userField.text password:Password.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                            // [self performSegueWithIdentifier:@"LogInSuccessful" sender:self];
@@ -38,8 +38,12 @@
                                             [Error show];
                                         }
                                     }];
-                                        }
-
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [userField resignFirstResponder];
+    [Password resignFirstResponder];
+    return NO;
+}
 
 
 #pragma mark - Navigation
