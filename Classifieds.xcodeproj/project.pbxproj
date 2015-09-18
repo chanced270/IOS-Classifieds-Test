@@ -34,8 +34,13 @@
 		14316C1B1B60B3EF0082A3F0 /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14316C1A1B60B3EF0082A3F0 /* ItemListTableCell.xib */; };
 		14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */; };
 		1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454B17C1B5C542900AE86FD /* FilterTableViewController.m */; };
+		1457328C1BABD95F00A2F70C /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732851BABD95F00A2F70C /* SCLAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		1457328D1BABD95F00A2F70C /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732871BABD95F00A2F70C /* SCLAlertViewResponder.m */; settings = {ASSET_TAGS = (); }; };
+		1457328E1BABD95F00A2F70C /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */; settings = {ASSET_TAGS = (); }; };
+		1457328F1BABD95F00A2F70C /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1457328B1BABD95F00A2F70C /* SCLButton.m */; settings = {ASSET_TAGS = (); }; };
+		145732931BABDB5E00A2F70C /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145732921BABDB5E00A2F70C /* SignUpView.xib */; settings = {ASSET_TAGS = (); }; };
+		145732961BABDB8400A2F70C /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732951BABDB8400A2F70C /* SignUpView.m */; settings = {ASSET_TAGS = (); }; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
-		1484E96B1BAB244B0002EBEF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484E96A1BAB244B0002EBEF /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
 		14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */; };
 		14AA6AC41B55C5BD00120823 /* gear-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC31B55C5BD00120823 /* gear-icon.png */; };
 		14B0A09C1B47923500EDEC5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */; };
@@ -108,9 +113,18 @@
 		14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
 		1454B17B1B5C542900AE86FD /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
 		1454B17C1B5C542900AE86FD /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
+		145732841BABD95F00A2F70C /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
+		145732851BABD95F00A2F70C /* SCLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertView.m; sourceTree = "<group>"; };
+		145732861BABD95F00A2F70C /* SCLAlertViewResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewResponder.h; sourceTree = "<group>"; };
+		145732871BABD95F00A2F70C /* SCLAlertViewResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewResponder.m; sourceTree = "<group>"; };
+		145732881BABD95F00A2F70C /* SCLAlertViewStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertViewStyleKit.h; sourceTree = "<group>"; };
+		145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
+		1457328A1BABD95F00A2F70C /* SCLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLButton.h; sourceTree = "<group>"; };
+		1457328B1BABD95F00A2F70C /* SCLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLButton.m; sourceTree = "<group>"; };
+		145732921BABDB5E00A2F70C /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		145732941BABDB8400A2F70C /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		145732951BABDB8400A2F70C /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		1484E9691BAB244B0002EBEF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		1484E96A1BAB244B0002EBEF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-gear-128.png"; sourceTree = "<group>"; };
 		14AA6AC31B55C5BD00120823 /* gear-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear-icon.png"; sourceTree = "<group>"; };
 		14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -174,6 +188,7 @@
 		1411DF0A1B477C0E00819398 = {
 			isa = PBXGroup;
 			children = (
+				145732831BABD95F00A2F70C /* SCLAlertView */,
 				1411DF151B477C0E00819398 /* Classifieds */,
 				1411DF321B477C0E00819398 /* ClassifiedsTests */,
 				1411DF3D1B477C0E00819398 /* ClassifiedsUITests */,
@@ -316,11 +331,28 @@
 			name = Container;
 			sourceTree = "<group>";
 		};
+		145732831BABD95F00A2F70C /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				145732841BABD95F00A2F70C /* SCLAlertView.h */,
+				145732851BABD95F00A2F70C /* SCLAlertView.m */,
+				145732861BABD95F00A2F70C /* SCLAlertViewResponder.h */,
+				145732871BABD95F00A2F70C /* SCLAlertViewResponder.m */,
+				145732881BABD95F00A2F70C /* SCLAlertViewStyleKit.h */,
+				145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */,
+				1457328A1BABD95F00A2F70C /* SCLButton.h */,
+				1457328B1BABD95F00A2F70C /* SCLButton.m */,
+			);
+			name = SCLAlertView;
+			path = "../../SDKS/SCLAlertView 2/SCLAlertView";
+			sourceTree = "<group>";
+		};
 		1484E96C1BAB24880002EBEF /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				1484E9691BAB244B0002EBEF /* SignUpViewController.h */,
-				1484E96A1BAB244B0002EBEF /* SignUpViewController.m */,
+				145732921BABDB5E00A2F70C /* SignUpView.xib */,
+				145732941BABDB8400A2F70C /* SignUpView.h */,
+				145732951BABDB8400A2F70C /* SignUpView.m */,
 			);
 			name = "Sign Up";
 			sourceTree = "<group>";
@@ -442,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145732931BABDB5E00A2F70C /* SignUpView.xib in Resources */,
 				142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */,
 				1411DF261B477C0E00819398 /* Assets.xcassets in Resources */,
 				142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */,
@@ -477,16 +510,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1457328C1BABD95F00A2F70C /* SCLAlertView.m in Sources */,
+				1457328F1BABD95F00A2F70C /* SCLButton.m in Sources */,
+				1457328D1BABD95F00A2F70C /* SCLAlertViewResponder.m in Sources */,
 				14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */,
+				145732961BABDB8400A2F70C /* SignUpView.m in Sources */,
 				1411DF1B1B477C0E00819398 /* AppDelegate.m in Sources */,
 				1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */,
 				1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
 				14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */,
-				1484E96B1BAB244B0002EBEF /* SignUpViewController.m in Sources */,
 				1411DF4E1B47808300819398 /* ItemListTableViewController.m in Sources */,
 				142FC3851B479EFD007D0944 /* SignInViewController.m in Sources */,
 				1411DF181B477C0E00819398 /* main.m in Sources */,
+				1457328E1BABD95F00A2F70C /* SCLAlertViewStyleKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="aYO-QB-kJO" customClass="SignUpView">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="a97-ta-jyh"/>
+                <viewControllerLayoutGuide type="bottom" id="cUh-Ca-IZf"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="Swx-Hl-LYa">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmv-3e-EXk">
+                        <rect key="frame" x="268" y="58" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="tmv-3e-EXk" firstAttribute="top" secondItem="a97-ta-jyh" secondAttribute="bottom" constant="8" symbolic="YES" id="jRw-pu-kSd"/>
+                    <constraint firstItem="tmv-3e-EXk" firstAttribute="centerX" secondItem="Swx-Hl-LYa" secondAttribute="centerX" id="lo8-bk-fce"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="jRw-pu-kSd"/>
+                        <exclude reference="lo8-bk-fce"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular">
+                    <mask key="constraints">
+                        <include reference="jRw-pu-kSd"/>
+                        <include reference="lo8-bk-fce"/>
+                    </mask>
+                </variation>
+            </view>
+            <point key="canvasLocation" x="356" y="84"/>
+        </viewController>
+    </objects>
+</document>

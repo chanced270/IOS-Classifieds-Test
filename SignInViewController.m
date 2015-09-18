@@ -7,13 +7,14 @@
 //
 
 #import "SignInViewController.h"
+#import "SignUpView.h"
 
 @interface SignInViewController ()
 
 @end
 
 @implementation SignInViewController
-@synthesize userField,Password,Login;
+@synthesize userField,Password,Login,SignUpAlert;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,9 +43,39 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [userField resignFirstResponder];
     [Password resignFirstResponder];
+    [_SUserTXT resignFirstResponder];
+    [_SPassTXT resignFirstResponder];
+    [_SEmailTXT resignFirstResponder];
+    [_SZipTXT resignFirstResponder];
+   // [SignUpAlert resignFirstResponder];
     return NO;
 }
 
+#pragma mark - SignUp Alert
+- (IBAction)SignUp:(id)sender {
+    SignUpAlert = [[SCLAlertView alloc] init];
+    //SignUpView *SUV = [[SignUpView alloc]init];
+    _SUserTXT = [SignUpAlert addTextField:@"Username"];
+    _SPassTXT = [SignUpAlert addTextField:@"Password"];
+    _SEmailTXT = [SignUpAlert addTextField:@"Email"];
+    _SZipTXT = [SignUpAlert addTextField:@"Zipcode"];
+    _SUserTXT.delegate = self;
+    _SPassTXT.delegate =self;
+    _SEmailTXT.delegate = self;
+    _SZipTXT.delegate = self;
+[SignUpAlert addButton:@"Create Account" actionBlock:^{
+#pragma mark - Create New user Alert
+    _SUserName = _SUserTXT.text;
+    _SPass = _SPassTXT.text;
+    _SEmail = _SEmailTXT.text;
+    _SZip = _SZipTXT.text;
+    
+}];
+    [SignUpAlert showNotice:self title:@"Create Account" subTitle:NULL closeButtonTitle:@"Close" duration:0.0f];
+    
+}
+-(void)SignUpUser{
+}
 
 #pragma mark - Navigation
 

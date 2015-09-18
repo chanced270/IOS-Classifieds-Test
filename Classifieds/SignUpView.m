@@ -1,18 +1,18 @@
 //
-//  SignUpViewController.m
+//  SignUpView.m
 //  Classifieds
 //
-//  Created by Zackary Divine on 9/17/15.
+//  Created by Zackary Divine on 9/18/15.
 //  Copyright © 2015 Zackary Divine. All rights reserved.
 //
 
-#import "SignUpViewController.h"
+#import "SignUpView.h"
 
-@interface SignUpViewController ()
+@interface SignUpView ()
 
 @end
 
-@implementation SignUpViewController
+@implementation SignUpView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)SignUpConfirm:(id)sender {
-    
-    [self performSegueWithIdentifier:@"SignUpComplete" sender:self];
 }
 
 /*
