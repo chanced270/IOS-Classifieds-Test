@@ -52,6 +52,7 @@
 		14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */; };
 		14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */; };
 		14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */; };
+		14C93C861BAC6D8C0084D230 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C93C851BAC6D8C0084D230 /* iAd.framework */; };
 		14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */; };
 		14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */; };
 /* End PBXBuildFile section */
@@ -136,6 +137,7 @@
 		14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		14C93C851BAC6D8C0084D230 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		14E4A6231B5EE75A00FC38C3 /* CreatePostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostController.h; sourceTree = "<group>"; };
 		14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostController.m; sourceTree = "<group>"; };
 		14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stock_41__paper_texture_bigger_by_our_stock.png; path = ../../../../Downloads/stock_41__paper_texture_bigger_by_our_stock.png; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C93C861BAC6D8C0084D230 /* iAd.framework in Frameworks */,
 				146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */,
 				14B0A09E1B47923C00EDEC5C /* libz.dylib in Frameworks */,
 				14B0A0A71B47925B00EDEC5C /* ParseCrashReporting.framework in Frameworks */,
@@ -281,6 +284,7 @@
 		1411DF7A1B47874A00819398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14C93C851BAC6D8C0084D230 /* iAd.framework */,
 				146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */,
 				14B0A09D1B47923C00EDEC5C /* libz.dylib */,
 				14B0A09B1B47923500EDEC5C /* libsqlite3.dylib */,

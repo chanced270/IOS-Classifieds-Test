@@ -14,12 +14,14 @@
 @end
 
 @implementation ItemListTableViewController
-@synthesize FromValue,ToValue,ItemArray,ItemList,Query,FromNumValue,ToNumValue;
+@synthesize FromValue,ToValue,ItemArray,ItemList,Query,FromNumValue,ToNumValue,Banner;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
     [self performSelector:@selector(ParseItemListSearch)];
+    self.Banner.delegate = self;
+    self.Banner.alpha = 0.0;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -34,12 +36,14 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     //loads NSStrings from FilterTableVC
+    /*
     self.ToValue = _ToVal;
     self.FromValue = _FromVal;
     NSString *test = [NSString stringWithFormat:@"From: %d To: %d",FromValue,ToValue];
     NSLog(test);
     FromNumValue = [NSNumber numberWithInt:FromValue];
     ToNumValue = [NSNumber numberWithInt:ToValue];
+     */
    }
 #pragma mark -Search Post Data Base
 -(void)ParseItemListSearch{
@@ -67,7 +71,10 @@ if (FromNumValue > 0) {
     [Query whereKey:@"Price" greaterThanOrEqualTo:FromNumValue];
 }
  */
-
+#pragma mark - Toolbar Functions
+- (IBAction)Category:(id)sender {
+    NSLog(@"Category Clicked");
+}
 
 #pragma mark - Table view data source
 
@@ -77,10 +84,6 @@ if (FromNumValue > 0) {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [ItemArray count];
-}
-#pragma mark - Toolbar Functions
-- (IBAction)Category:(id)sender {
-    NSLog(@"Category Clicked");
 }
 
 
@@ -101,6 +104,7 @@ if (FromNumValue > 0) {
     cell.DatePublished.text = [TempDict objectForKey:@"CreatedAt"];
     cell.Title.text = [TempDict objectForKey:@"Title"];
     cell.Location.text = [TempDict objectForKey:@"Location"];
+   // cell.DatePublished.text = [TempDict objectForKey:@"createdAt"];
     PFObject *ItemObject = [ItemArray objectAtIndex:indexPath.row];
     PFFile *ItemImageFile = [ItemObject objectForKey:@"Image"];
     [ItemImageFile getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
@@ -113,7 +117,32 @@ if (FromNumValue > 0) {
     return cell;
 
 }
-
+#pragma mark - AdView
+-(void)bannerViewWillLoadAd:(ADBannerView *)banner{
+    
+}
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner{
+    NSLog(@"Ad banner loaded ad");
+    //show banner
+    [UIView animateWithDuration:0.5 animations:^{
+        self.Banner.alpha = 1.0;
+    }];
+    
+}
+-(void)bannerViewActionDidFinish:(ADBannerView *)banner{
+    NSLog(@"Ad banner Finished");
+    
+}
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.Banner.alpha = 0.0;
+    }];
+    NSLog(@"Failed to retrieve add");
+}
+-(BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave{
+    NSLog(@"Ad banner Action about to begin");
+    return YES;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -94,10 +94,9 @@ UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
     CreatePost[@"Price"] = [NSNumber numberWithInt:PriceInteger];
     CreatePost[@"Category"] = Category.text;
     CreatePost[@"Location"] = Localization;
-#warning Implementation of Paid Posting not implemented yet
-   // CreatePost[@"Pp"] = @"true";
     NSData *ImageData = UIImagePNGRepresentation(ImageView.image);
-    PFFile *ImageFile = [PFFile fileWithData:ImageData];
+        PFFile *ImageFile = [PFFile fileWithData:ImageData]; // Original
+      //  ImageDataPublic = ImageFile;
     CreatePost[@"Image"] = ImageFile;
     PFGeoPoint *PostPoint = [PFGeoPoint geoPointWithLatitude:latitude longitude:longitude];
     CreatePost[@"LocationGeopoint"] = PostPoint;

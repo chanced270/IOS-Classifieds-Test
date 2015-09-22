@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <iAd/iAd.h>
 
-@interface ItemListTableViewController : UITableViewController
+@interface ItemListTableViewController : UITableViewController<ADBannerViewDelegate>
 @property  int FromVal;
 @property  int ToVal;
 @property  int FromValue;
@@ -19,5 +20,6 @@
 @property PFQuery *Query;
 @property NSNumber *FromNumValue;
 @property NSNumber *ToNumValue;
+@property (weak, nonatomic) IBOutlet ADBannerView *Banner;
 
 @end
