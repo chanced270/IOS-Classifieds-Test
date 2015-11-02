@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Classifieds Quick View.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Classifieds.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>1411DF391B477C0E00819398</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14B4F0971BC62BF500CC95D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

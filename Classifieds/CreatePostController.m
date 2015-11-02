@@ -94,6 +94,7 @@ UIImagePickerController *PickerView = [[UIImagePickerController alloc] init];
     CreatePost[@"Price"] = [NSNumber numberWithInt:PriceInteger];
     CreatePost[@"Category"] = Category.text;
     CreatePost[@"Location"] = Localization;
+    CreatePost[@"postedBy"] = [PFUser currentUser];
     NSData *ImageData = UIImagePNGRepresentation(ImageView.image);
         PFFile *ImageFile = [PFFile fileWithData:ImageData]; // Original
       //  ImageDataPublic = ImageFile;

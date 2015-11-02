@@ -26,7 +26,8 @@
 		1411DF651B47860400819398 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF641B47860400819398 /* Social.framework */; };
 		1411DF671B47860A00819398 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF661B47860A00819398 /* StoreKit.framework */; };
 		1411DF691B47861A00819398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411DF681B47861A00819398 /* SystemConfiguration.framework */; };
-		142DE5D71B4E035E00AFF8FB /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */; };
+		142D608D1BE671EC00C64C76 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142D608C1BE671EC00C64C76 /* SettingsView.xib */; };
+		142D60901BE6737E00C64C76 /* MyAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 142D608F1BE6737E00C64C76 /* MyAccount.m */; };
 		142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */; };
 		142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */; };
 		142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE5E81B4E1F4000AFF8FB /* 025-2.png */; };
@@ -34,12 +35,10 @@
 		14316C1B1B60B3EF0082A3F0 /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14316C1A1B60B3EF0082A3F0 /* ItemListTableCell.xib */; };
 		14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14316C1D1B60B4E70082A3F0 /* ItemTableViewCell.m */; };
 		1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454B17C1B5C542900AE86FD /* FilterTableViewController.m */; };
-		1457328C1BABD95F00A2F70C /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732851BABD95F00A2F70C /* SCLAlertView.m */; settings = {ASSET_TAGS = (); }; };
-		1457328D1BABD95F00A2F70C /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732871BABD95F00A2F70C /* SCLAlertViewResponder.m */; settings = {ASSET_TAGS = (); }; };
-		1457328E1BABD95F00A2F70C /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */; settings = {ASSET_TAGS = (); }; };
-		1457328F1BABD95F00A2F70C /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1457328B1BABD95F00A2F70C /* SCLButton.m */; settings = {ASSET_TAGS = (); }; };
-		145732931BABDB5E00A2F70C /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145732921BABDB5E00A2F70C /* SignUpView.xib */; settings = {ASSET_TAGS = (); }; };
-		145732961BABDB8400A2F70C /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732951BABDB8400A2F70C /* SignUpView.m */; settings = {ASSET_TAGS = (); }; };
+		1457328C1BABD95F00A2F70C /* SCLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732851BABD95F00A2F70C /* SCLAlertView.m */; };
+		1457328D1BABD95F00A2F70C /* SCLAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732871BABD95F00A2F70C /* SCLAlertViewResponder.m */; };
+		1457328E1BABD95F00A2F70C /* SCLAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */; };
+		1457328F1BABD95F00A2F70C /* SCLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1457328B1BABD95F00A2F70C /* SCLButton.m */; };
 		146039381B4A5C3600BCC262 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */; };
 		14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */; };
 		14AA6AC41B55C5BD00120823 /* gear-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AA6AC31B55C5BD00120823 /* gear-icon.png */; };
@@ -52,7 +51,12 @@
 		14B0A0A91B47925B00EDEC5C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */; };
 		14B0A0AA1B47925B00EDEC5C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */; };
 		14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */; };
+		14B4F09B1BC62BF600CC95D8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4F09A1BC62BF600CC95D8 /* NotificationCenter.framework */; };
+		14B4F09F1BC62BF600CC95D8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4F09E1BC62BF600CC95D8 /* TodayViewController.m */; };
+		14B4F0A21BC62BF600CC95D8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B4F0A01BC62BF600CC95D8 /* MainInterface.storyboard */; };
+		14B4F0A61BC62BF600CC95D8 /* Classifieds Quick View.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14B4F0981BC62BF500CC95D8 /* Classifieds Quick View.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		14C93C861BAC6D8C0084D230 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C93C851BAC6D8C0084D230 /* iAd.framework */; };
+		14DC7E9C1BE14AFB0047994C /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DC7E9B1BE14AFB0047994C /* SignUpView.m */; };
 		14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */; };
 		14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */; };
 /* End PBXBuildFile section */
@@ -72,7 +76,28 @@
 			remoteGlobalIDString = 1411DF121B477C0E00819398;
 			remoteInfo = Classifieds;
 		};
+		14B4F0A41BC62BF600CC95D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1411DF0B1B477C0E00819398 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B4F0971BC62BF500CC95D8;
+			remoteInfo = "Classifieds Quick View";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14B4F0AA1BC62BF600CC95D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14B4F0A61BC62BF600CC95D8 /* Classifieds Quick View.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1411DF131B477C0E00819398 /* Classifieds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classifieds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +128,10 @@
 		1411DF641B47860400819398 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1411DF661B47860A00819398 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1411DF681B47861A00819398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		142D608B1BE670BF00C64C76 /* Classifieds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Classifieds.entitlements; sourceTree = "<group>"; };
+		142D608C1BE671EC00C64C76 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		142D608E1BE6737E00C64C76 /* MyAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccount.h; sourceTree = "<group>"; };
+		142D608F1BE6737E00C64C76 /* MyAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccount.m; sourceTree = "<group>"; };
 		142DE5DA1B4E0BD000AFF8FB /* black-line-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-line-bg.png"; path = "../../../../Documents/Classifieds Images/black-line-bg.png"; sourceTree = "<group>"; };
 		142DE5E01B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tileable-light-blurs-and-abstract-circles-18.png"; path = "../../../../Documents/Classifieds Images/tileable-light-blurs-and-abstract-circles-18.png"; sourceTree = "<group>"; };
 		142DE5E81B4E1F4000AFF8FB /* 025-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "025-2.png"; path = "../../../../Documents/Classifieds Images/025-2.png"; sourceTree = "<group>"; };
@@ -122,9 +150,6 @@
 		145732891BABD95F00A2F70C /* SCLAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLAlertViewStyleKit.m; sourceTree = "<group>"; };
 		1457328A1BABD95F00A2F70C /* SCLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLButton.h; sourceTree = "<group>"; };
 		1457328B1BABD95F00A2F70C /* SCLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLButton.m; sourceTree = "<group>"; };
-		145732921BABDB5E00A2F70C /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
-		145732941BABDB8400A2F70C /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
-		145732951BABDB8400A2F70C /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		146039361B4A5BD100BCC262 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		14AA6AC11B55C55700120823 /* icon-ios7-gear-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-gear-128.png"; sourceTree = "<group>"; };
 		14AA6AC31B55C5BD00120823 /* gear-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear-icon.png"; sourceTree = "<group>"; };
@@ -137,7 +162,15 @@
 		14B0A0A31B47925B00EDEC5C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		14B0A0A41B47925B00EDEC5C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		14B4F0981BC62BF500CC95D8 /* Classifieds Quick View.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Classifieds Quick View.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B4F09A1BC62BF600CC95D8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		14B4F09D1BC62BF600CC95D8 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		14B4F09E1BC62BF600CC95D8 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		14B4F0A11BC62BF600CC95D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		14B4F0A31BC62BF600CC95D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C93C851BAC6D8C0084D230 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		14DC7E9A1BE14AFB0047994C /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		14DC7E9B1BE14AFB0047994C /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		14E4A6231B5EE75A00FC38C3 /* CreatePostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostController.h; sourceTree = "<group>"; };
 		14E4A6241B5EE75A00FC38C3 /* CreatePostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostController.m; sourceTree = "<group>"; };
 		14F685D91B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stock_41__paper_texture_bigger_by_our_stock.png; path = ../../../../Downloads/stock_41__paper_texture_bigger_by_our_stock.png; sourceTree = "<group>"; };
@@ -185,6 +218,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14B4F0951BC62BF500CC95D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4F09B1BC62BF600CC95D8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -195,6 +236,8 @@
 				1411DF151B477C0E00819398 /* Classifieds */,
 				1411DF321B477C0E00819398 /* ClassifiedsTests */,
 				1411DF3D1B477C0E00819398 /* ClassifiedsUITests */,
+				14B4F09C1BC62BF600CC95D8 /* Classifieds Quick View */,
+				14B4F0991BC62BF600CC95D8 /* Frameworks */,
 				1411DF141B477C0E00819398 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,6 +248,7 @@
 				1411DF131B477C0E00819398 /* Classifieds.app */,
 				1411DF2F1B477C0E00819398 /* ClassifiedsTests.xctest */,
 				1411DF3A1B477C0E00819398 /* ClassifiedsUITests.xctest */,
+				14B4F0981BC62BF500CC95D8 /* Classifieds Quick View.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +256,7 @@
 		1411DF151B477C0E00819398 /* Classifieds */ = {
 			isa = PBXGroup;
 			children = (
+				142D608B1BE670BF00C64C76 /* Classifieds.entitlements */,
 				14F685D81B4CD85600DBA57B /* Images */,
 				14B0A0AB1B4792DA00EDEC5C /* Launch Screen.xib */,
 				1411DF191B477C0E00819398 /* AppDelegate.h */,
@@ -219,7 +264,6 @@
 				1411DF1F1B477C0E00819398 /* Main.storyboard */,
 				1454B17B1B5C542900AE86FD /* FilterTableViewController.h */,
 				1454B17C1B5C542900AE86FD /* FilterTableViewController.m */,
-				142DE5D61B4E035E00AFF8FB /* iPadStoryboard.storyboard */,
 				1411DF511B4783E500819398 /* Main View */,
 				1411DF551B47840E00819398 /* SettingsAndUser */,
 				1411DF251B477C0E00819398 /* Assets.xcassets */,
@@ -277,6 +321,7 @@
 				142FC3841B479EFD007D0944 /* SignInViewController.m */,
 				1411DF521B47840700819398 /* SettingsViewController.h */,
 				1411DF531B47840700819398 /* SettingsViewController.m */,
+				142D60911BE6738400C64C76 /* MyAccount */,
 			);
 			name = SettingsAndUser;
 			sourceTree = "<group>";
@@ -307,6 +352,16 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		142D60911BE6738400C64C76 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				142D608C1BE671EC00C64C76 /* SettingsView.xib */,
+				142D608E1BE6737E00C64C76 /* MyAccount.h */,
+				142D608F1BE6737E00C64C76 /* MyAccount.m */,
+			);
+			name = MyAccount;
 			sourceTree = "<group>";
 		};
 		14316C1F1B60B4ED0082A3F0 /* Item List Cell */ = {
@@ -354,11 +409,29 @@
 		1484E96C1BAB24880002EBEF /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				145732921BABDB5E00A2F70C /* SignUpView.xib */,
-				145732941BABDB8400A2F70C /* SignUpView.h */,
-				145732951BABDB8400A2F70C /* SignUpView.m */,
+				14DC7E9A1BE14AFB0047994C /* SignUpView.h */,
+				14DC7E9B1BE14AFB0047994C /* SignUpView.m */,
 			);
 			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		14B4F0991BC62BF600CC95D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B4F09A1BC62BF600CC95D8 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14B4F09C1BC62BF600CC95D8 /* Classifieds Quick View */ = {
+			isa = PBXGroup;
+			children = (
+				14B4F09D1BC62BF600CC95D8 /* TodayViewController.h */,
+				14B4F09E1BC62BF600CC95D8 /* TodayViewController.m */,
+				14B4F0A01BC62BF600CC95D8 /* MainInterface.storyboard */,
+				14B4F0A31BC62BF600CC95D8 /* Info.plist */,
+			);
+			path = "Classifieds Quick View";
 			sourceTree = "<group>";
 		};
 		14F685D81B4CD85600DBA57B /* Images */ = {
@@ -384,10 +457,12 @@
 				1411DF0F1B477C0E00819398 /* Sources */,
 				1411DF101B477C0E00819398 /* Frameworks */,
 				1411DF111B477C0E00819398 /* Resources */,
+				14B4F0AA1BC62BF600CC95D8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14B4F0A51BC62BF600CC95D8 /* PBXTargetDependency */,
 			);
 			name = Classifieds;
 			productName = Classifieds;
@@ -430,6 +505,23 @@
 			productReference = 1411DF3A1B477C0E00819398 /* ClassifiedsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		14B4F0971BC62BF500CC95D8 /* Classifieds Quick View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B4F0A91BC62BF600CC95D8 /* Build configuration list for PBXNativeTarget "Classifieds Quick View" */;
+			buildPhases = (
+				14B4F0941BC62BF500CC95D8 /* Sources */,
+				14B4F0951BC62BF500CC95D8 /* Frameworks */,
+				14B4F0961BC62BF500CC95D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Classifieds Quick View";
+			productName = "Classifieds Quick View";
+			productReference = 14B4F0981BC62BF500CC95D8 /* Classifieds Quick View.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -442,6 +534,11 @@
 					1411DF121B477C0E00819398 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = UC7SLQ2YG6;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					1411DF2E1B477C0E00819398 = {
 						CreatedOnToolsVersion = 7.0;
@@ -450,6 +547,10 @@
 					1411DF391B477C0E00819398 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 1411DF121B477C0E00819398;
+					};
+					14B4F0971BC62BF500CC95D8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = UC7SLQ2YG6;
 					};
 				};
 			};
@@ -469,6 +570,7 @@
 				1411DF121B477C0E00819398 /* Classifieds */,
 				1411DF2E1B477C0E00819398 /* ClassifiedsTests */,
 				1411DF391B477C0E00819398 /* ClassifiedsUITests */,
+				14B4F0971BC62BF500CC95D8 /* Classifieds Quick View */,
 			);
 		};
 /* End PBXProject section */
@@ -478,7 +580,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145732931BABDB5E00A2F70C /* SignUpView.xib in Resources */,
 				142DE5E11B4E16DA00AFF8FB /* tileable-light-blurs-and-abstract-circles-18.png in Resources */,
 				1411DF261B477C0E00819398 /* Assets.xcassets in Resources */,
 				142DE5E91B4E1F4000AFF8FB /* 025-2.png in Resources */,
@@ -486,10 +587,10 @@
 				14F685DA1B4CD86800DBA57B /* stock_41__paper_texture_bigger_by_our_stock.png in Resources */,
 				1411DF211B477C0E00819398 /* Main.storyboard in Resources */,
 				14316C1B1B60B3EF0082A3F0 /* ItemListTableCell.xib in Resources */,
+				142D608D1BE671EC00C64C76 /* SettingsView.xib in Resources */,
 				14B0A0AC1B4792DA00EDEC5C /* Launch Screen.xib in Resources */,
 				14AA6AC21B55C55700120823 /* icon-ios7-gear-128.png in Resources */,
 				142DE5DB1B4E0BD000AFF8FB /* black-line-bg.png in Resources */,
-				142DE5D71B4E035E00AFF8FB /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +608,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14B4F0961BC62BF500CC95D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4F0A21BC62BF600CC95D8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -518,9 +627,10 @@
 				1457328F1BABD95F00A2F70C /* SCLButton.m in Sources */,
 				1457328D1BABD95F00A2F70C /* SCLAlertViewResponder.m in Sources */,
 				14316C1E1B60B4E70082A3F0 /* ItemTableViewCell.m in Sources */,
-				145732961BABDB8400A2F70C /* SignUpView.m in Sources */,
+				14DC7E9C1BE14AFB0047994C /* SignUpView.m in Sources */,
 				1411DF1B1B477C0E00819398 /* AppDelegate.m in Sources */,
 				1411DF241B477C0E00819398 /* Classifieds.xcdatamodeld in Sources */,
+				142D60901BE6737E00C64C76 /* MyAccount.m in Sources */,
 				1454B17D1B5C542900AE86FD /* FilterTableViewController.m in Sources */,
 				1411DF541B47840700819398 /* SettingsViewController.m in Sources */,
 				14E4A6251B5EE75A00FC38C3 /* CreatePostController.m in Sources */,
@@ -547,6 +657,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14B4F0941BC62BF500CC95D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4F09F1BC62BF600CC95D8 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -560,6 +678,11 @@
 			target = 1411DF121B477C0E00819398 /* Classifieds */;
 			targetProxy = 1411DF3B1B477C0E00819398 /* PBXContainerItemProxy */;
 		};
+		14B4F0A51BC62BF600CC95D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B4F0971BC62BF500CC95D8 /* Classifieds Quick View */;
+			targetProxy = 14B4F0A41BC62BF600CC95D8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -569,6 +692,14 @@
 				1411DF201B477C0E00819398 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14B4F0A01BC62BF600CC95D8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B4F0A11BC62BF600CC95D8 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -662,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Classifieds/Classifieds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -670,13 +802,13 @@
 					/Users/Zack/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -684,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Classifieds/Classifieds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -692,12 +825,12 @@
 					/Users/Zack/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Classifieds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -751,6 +884,33 @@
 			};
 			name = Release;
 		};
+		14B4F0A71BC62BF600CC95D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Classifieds Quick View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds.Classifieds-Quick-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14B4F0A81BC62BF600CC95D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Classifieds Quick View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zackary-Divine.Classifieds.Classifieds-Quick-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -786,6 +946,15 @@
 			buildConfigurations = (
 				1411DF4A1B477C0E00819398 /* Debug */,
 				1411DF4B1B477C0E00819398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B4F0A91BC62BF600CC95D8 /* Build configuration list for PBXNativeTarget "Classifieds Quick View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B4F0A71BC62BF600CC95D8 /* Debug */,
+				14B4F0A81BC62BF600CC95D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

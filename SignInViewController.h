@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "SettingsViewController.h"
-#import "SignUpAlertView.h"
 #import "SCLAlertView.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface SignInViewController : UIViewController <UITextFieldDelegate>
+@interface SignInViewController : UIViewController <UITextFieldDelegate>{
+    CLGeocoder *_geocoder;
+}
 @property (weak, nonatomic) IBOutlet UITextField *userField;
 @property (weak, nonatomic) IBOutlet UITextField *Password;
 @property (weak, nonatomic) IBOutlet UIButton *Login;
@@ -25,6 +27,10 @@
 @property UITextField *SEmailTXT;
 @property UITextField *SZipTXT;
 @property SCLAlertView *SignUpAlert;
+@property CLGeocoder *geocoder;
+@property float latitude;
+@property float longitude;
+@property NSString *Localization;
 
 
 @end

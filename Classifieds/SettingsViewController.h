@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "MyAccount.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface SettingsViewController : UIViewController  {
@@ -17,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *LogInBTN;
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (weak, nonatomic) NSTimer *stoptimer;
+@property (weak, nonatomic) MyAccount* accountView;
 
 @end

@@ -7,14 +7,13 @@
 //
 
 #import "SignInViewController.h"
-#import "SignUpView.h"
 
 @interface SignInViewController ()
 
 @end
 
 @implementation SignInViewController
-@synthesize userField,Password,Login,SignUpAlert;
+@synthesize userField,Password,Login,SignUpAlert,geocoder= _geocoder,latitude,Localization,longitude;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,11 +47,14 @@
     [_SEmailTXT resignFirstResponder];
     [_SZipTXT resignFirstResponder];
    // [SignUpAlert resignFirstResponder];
-    return NO;
+    return YES;
 }
 
 #pragma mark - SignUp Alert
 - (IBAction)SignUp:(id)sender {
+    
+    /*
+    //Sign up must be additional view not alert box
     SignUpAlert = [[SCLAlertView alloc] init];
     //SignUpView *SUV = [[SignUpView alloc]init];
     _SUserTXT = [SignUpAlert addTextField:@"Username"];
@@ -72,9 +74,39 @@
     
 }];
     [SignUpAlert showNotice:self title:@"Create Account" subTitle:NULL closeButtonTitle:@"Close" duration:0.0f];
-    
+    */
 }
 -(void)SignUpUser{
+    PFUser  *user = [PFUser user];
+    user.username = _SUserName;
+    user.password = _SPass;
+    user.email = _SEmail;
+    user[@"ZipCode"] = _SZip;
+    if (!self.geocoder) {
+        self.geocoder = [[CLGeocoder alloc]init];
+    }
+    NSString *address = _SZip;
+    [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
+        if ([placemarks count] > 0) {
+            CLPlacemark *placemark = [placemarks objectAtIndex:0];
+            CLLocation *location = placemark.location;
+            CLLocationCoordinate2D coordinate = location.coordinate;
+            Localization = placemark.locality;
+            float lat = coordinate.latitude;
+            float lon = coordinate.longitude;
+            longitude = lon;
+            latitude = lat;
+        }
+    }];
+    PFGeoPoint *UserPoint = [PFGeoPoint geoPointWithLatitude:latitude longitude:longitude];
+    user[@"LocationGeoPoint"] = UserPoint;
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        if (!error) {
+        }else{
+            NSString *errorString = [error userInfo][@"error"];
+            NSLog(errorString);
+        }
+    }];
 }
 
 #pragma mark - Navigation
